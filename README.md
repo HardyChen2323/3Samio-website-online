@@ -6,8 +6,8 @@
 
 ```
 .
-├── index.html                     # 部署入口（当前版本 v3）
-├── 3samio-office-site-v3.html     # 同内容版本副本，便于版本追溯
+├── index.html                     # 部署入口（当前版本 v4）
+├── 3samio-office-site-v4.html     # 同内容版本副本，便于版本追溯
 ├── images/                        # 全部图片素材（61 个文件，所有页面共用）
 ├── fonts/Manrope/                 # Manrope 字体（5 个字重，本地加载）
 ├── .nojekyll                      # GitHub Pages：跳过 Jekyll 处理
