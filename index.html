@@ -1,0 +1,2115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>3SAMIO 赛明欧 — 财经传播与投资者关系</title>
+<link href="images/v1L2w769zXlBzuzeggGhBs.svg" rel="icon" type="image/svg+xml">
+<link href="images/v1L2w769zXlBzuzeggGhBs.svg" rel="apple-touch-icon">
+<link href="https://www.3samio.com/" rel="canonical">
+<meta content="#000000" name="theme-color">
+<meta content="website" property="og:type">
+<meta content="3SAMIO 赛明欧" property="og:site_name">
+<meta content="3SAMIO 赛明欧 — 财经传播与投资者关系" property="og:title">
+<meta content="让中国企业的声音，被全球财经市场听见。" property="og:description">
+<meta content="https://www.3samio.com/" property="og:url">
+<meta content="images/QZ6AQht4OekX1cYrohUqHR.jpg" property="og:image">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="3SAMIO 赛明欧专注于财经传播与投资者关系服务：国内国际财经媒体关系、舆情管理与搜索优化、投资者关系传播、国际展会传播。" name="description">
+<style>
+/* ================= Design Tokens ================= */
+@font-face{font-family:"Manrope";src:url("fonts/Manrope/Manrope-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("fonts/Manrope/Manrope-Medium.ttf") format("truetype");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("fonts/Manrope/Manrope-SemiBold.ttf") format("truetype");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("fonts/Manrope/Manrope-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("fonts/Manrope/Manrope-ExtraBold.ttf") format("truetype");font-weight:800;font-style:normal;font-display:swap}
+:root{
+  --bg:#000000;            /* 深底（Valnet 黑） */
+  --bg-soft:#1A1A1A;
+  --paper:#FFFFFF;         /* 浅底主区（Valnet 白） */
+  --paper-deep:#F4F4F4;
+  --ink:#000000;           /* 墨 */
+  --ink-soft:#2B2B2B;
+  --body-l:#333333;        /* 浅底正文 */
+  --muted-l:#919191;       /* 浅底弱化 */
+  --text-d:#F4F4F4;        /* 深底正文 */
+  --muted-d:#919191;       /* 深底弱化 */
+  --blue:#1E74AF;  --blue-d:#1E74AF;
+  --amber:#1E74AF; --amber-d:#1E74AF;
+  --olive:#1E74AF; --olive-d:#1E74AF;
+  --brick:#1E74AF; --brick-d:#1E74AF;
+  --violet:#1E74AF;--violet-d:#1E74AF;
+  --hair-l:rgba(0,0,0,.12);
+  --hair-d:rgba(255,255,255,.08);
+  --nav-h:84px;
+  --container:1200px;
+  --ease:cubic-bezier(.22,.61,.21,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--body-l);
+  font-family:"Manrope","PingFang SC","HarmonyOS Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.en{font-family:"Manrope","PingFang SC",sans-serif}
+.mono{font-family:"Manrope",ui-monospace,sans-serif}
+.container{max-width:var(--container);margin:0 auto;padding:0 40px}
+h1,h2,h3,h4,p{margin:0}
+
+/* ================= 编辑部标题语法 ================= */
+.slash-title{position:relative;padding-left:.62em;font-weight:900;letter-spacing:-.01em;line-height:1.12;color:var(--ink)}
+.slash-title::before{content:"/";position:absolute;left:0;top:0;font-family:"Manrope",sans-serif;font-weight:800;color:var(--amber)}
+.slash-title .en-line{display:block;font-family:"Manrope",sans-serif}
+.eyebrow{font-family:"Manrope",sans-serif;font-size:12px;letter-spacing:.14em;color:var(--muted-l);text-transform:uppercase}
+.eyebrow b{color:var(--amber);font-weight:500}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin-bottom:56px}
+.sec-title{font-size:clamp(38px,4.6vw,60px);margin-top:14px}
+
+/* ================= 长箭头按钮（valnet 式文字链接） ================= */
+.btn-line{display:inline-flex;align-items:center;gap:14px;font-weight:700;font-size:16px;color:var(--ink);transition:color .3s var(--ease)}
+.btn-line .arr{width:46px;height:12px;position:relative;flex-shrink:0;transition:transform .3s var(--ease)}
+.btn-line .arr::before{content:"";position:absolute;left:0;right:0;top:5px;height:2px;background:currentColor}
+.btn-line .arr::after{content:"";position:absolute;right:1px;top:1px;width:10px;height:10px;border-top:2px solid currentColor;border-right:2px solid currentColor;transform:rotate(45deg)}
+.btn-line:hover{color:var(--blue)}
+.btn-line:hover .arr{transform:translateX(8px)}
+.btn-line.on-dark{color:#fff}
+.btn-line.on-dark:hover{color:var(--amber-d)}
+.btn-solid{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 34px;background:var(--ink);color:#FFFFFF;font-weight:700;font-size:15px;transition:transform .3s var(--ease),background .3s var(--ease)}
+.btn-solid:hover{background:var(--blue);transform:translateY(-2px)}
+.btn-ghost{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 34px;border:1px solid rgba(255,255,255,.35);color:#fff;font-weight:700;font-size:15px;transition:background .3s var(--ease),transform .3s var(--ease)}
+.btn-ghost:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+
+/* ================= 导航 ================= */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;color:#fff;transition:background .35s var(--ease),color .35s var(--ease),box-shadow .35s var(--ease)}
+.nav.scrolled{background:rgba(255,255,255,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);box-shadow:0 1px 0 var(--hair-l)}
+.nav-inner{max-width:1360px;margin:0 auto;height:var(--nav-h);padding:0 40px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.logo-box{position:relative;width:42px;height:42px;border-radius:10px;background:var(--ink);flex-shrink:0;transition:background .35s var(--ease)}
+.nav.scrolled .logo-box{background:var(--paper-deep)}
+.logo-box .l3{position:absolute;left:7px;top:1px;font-family:"Manrope",sans-serif;font-weight:800;font-size:25px;line-height:1.2;color:var(--brick-d)}
+.logo-box .lS{position:absolute;left:19px;top:10px;font-family:"Manrope",sans-serif;font-weight:800;font-size:20px;line-height:1.2;color:var(--paper)}
+.nav.scrolled .logo-box .lS{color:var(--ink)}
+.brand-text{display:flex;flex-direction:column;gap:2px}
+.brand-text strong{font-size:16px;font-weight:700;line-height:1.2}
+.brand-text small{font-family:"Manrope",sans-serif;font-size:9px;letter-spacing:.1em;opacity:.55}
+.nav-links{display:flex;align-items:center;gap:8px}
+.nav-item{position:relative}
+.nav-item>a{display:flex;align-items:center;gap:6px;padding:31px 14px;font-size:14.5px;font-weight:500;transition:color .25s var(--ease)}
+.nav-item>a .caret{font-size:10px;transition:transform .3s var(--ease);opacity:.6}
+.nav-item:hover>a,.nav-item>a.active{color:var(--amber-d)}
+.nav.scrolled .nav-item:hover>a,.nav.scrolled .nav-item>a.active{color:var(--amber)}
+.nav-item:hover>a .caret{transform:rotate(180deg)}
+.dropdown{position:absolute;top:calc(100% - 6px);left:50%;transform:translate(-50%,8px);min-width:230px;background:#fff;color:var(--ink);box-shadow:0 18px 50px rgba(0,0,0,.16);border-top:3px solid var(--amber);padding:10px 0;opacity:0;visibility:hidden;transition:opacity .28s var(--ease),transform .28s var(--ease),visibility .28s}
+.nav-item:hover .dropdown{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.dropdown a{display:block;padding:11px 22px;font-size:14px;color:var(--ink-soft);transition:background .2s,color .2s,padding-left .2s}
+.dropdown a:hover{background:var(--paper);padding-left:26px;color:var(--amber)}
+.dropdown a .mono-no{font-family:"Manrope",sans-serif;font-size:10px;color:var(--muted-l);margin-right:10px}
+.nav-right{display:flex;align-items:center;gap:18px}
+.nav-cta{height:42px;padding:0 22px;background:var(--amber-d);color:#FFFFFF;border-radius:8px;display:inline-flex;align-items:center;font-weight:700;font-size:14px;transition:background .25s,transform .25s}
+.nav-cta:hover{background:#FFFFFF;color:var(--ink);transform:translateY(-1px)}
+.nav.scrolled .nav-cta{background:var(--ink);color:var(--paper)}
+.nav.scrolled .nav-cta:hover{background:var(--amber);color:#FFFFFF}
+.nav-toggle{display:none;background:none;border:0;padding:8px;cursor:pointer}
+.nav-toggle span{display:block;width:22px;height:2px;background:currentColor;margin:5px 0;transition:transform .3s,opacity .3s}
+.nav.open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav.open .nav-toggle span:nth-child(2){opacity:0}
+.nav.open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:var(--nav-h);left:0;right:0;z-index:999;background:rgba(0,0,0,.98);color:#fff;padding:8px 28px 28px;flex-direction:column;border-top:1px solid var(--hair-d)}
+.mobile-menu a{padding:15px 2px;font-size:16px;border-bottom:1px solid var(--hair-d)}
+.mobile-menu a.mm-sub{padding-left:20px;font-size:14px;opacity:.75}
+.mobile-menu a:last-child{border-bottom:0}
+.nav.open .mobile-menu{display:flex}
+@media (max-width:1000px){.nav-links,.nav-cta{display:none}.nav-toggle{display:block}}
+
+/* ================= 语言切换 ================= */
+.lang-toggle{display:inline-flex;align-items:center;gap:7px;height:38px;padding:0 14px;border:1px solid rgba(255,255,255,.35);border-radius:100px;background:transparent;color:#fff;font-family:"Manrope","PingFang SC",sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.05em;cursor:pointer;transition:border-color .25s,background .25s;flex-shrink:0}
+.lang-toggle:hover{border-color:var(--amber-d)}
+.lang-toggle .lt-sep{opacity:.4;font-weight:400}
+.lang-toggle [data-lang-opt]{opacity:.5;transition:opacity .2s,color .2s}
+.lang-toggle [data-lang-opt].on{opacity:1;color:var(--amber-d)}
+.nav.scrolled .lang-toggle{border-color:var(--hair-l);color:var(--ink)}
+.nav.scrolled .lang-toggle [data-lang-opt].on{color:var(--amber)}
+@media (max-width:640px){.lang-toggle{height:34px;padding:0 11px;font-size:11.5px}}
+
+/* ================= 页面路由 ================= */
+.page{display:none}
+.page.active{display:block;animation:pageIn .6s var(--ease)}
+@keyframes pageIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* ================= Hero（首页） ================= */
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden;background:var(--bg)}
+.hero-bg{position:absolute;inset:0;background:url("images/QZ6AQht4OekX1cYrohUqHR.jpg") center/cover no-repeat;animation:kenburns 26s var(--ease) infinite alternate;will-change:transform}
+@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.12) translateY(-1.5%)}}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.25) 45%,rgba(0,0,0,.88) 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding:calc(var(--nav-h) + 60px) 0 110px}
+.hero h1{font-size:clamp(42px,6.4vw,84px);font-weight:900;line-height:1.14;letter-spacing:-.01em;color:#fff;max-width:14em}
+.hero h1 .hl{color:var(--amber-d)}
+.hero-sub{margin:26px 0 0;max-width:640px;font-size:17px;line-height:1.85;color:var(--text-d)}
+.hero-cta{display:flex;align-items:center;gap:36px;margin-top:52px;flex-wrap:wrap}
+.hero-band{height:9px;background:linear-gradient(90deg,var(--blue-d) 0%,var(--amber-d) 25%,var(--olive-d) 50%,var(--brick-d) 75%,var(--violet-d) 100%)}
+.hero-scroll{position:absolute;right:40px;bottom:36px;z-index:3;font-family:"Manrope",sans-serif;font-size:10px;letter-spacing:.2em;color:rgba(255,255,255,.55);writing-mode:vertical-rl;display:flex;align-items:center;gap:10px}
+.hero-scroll::after{content:"";width:1px;height:44px;background:linear-gradient(180deg,rgba(255,255,255,.6),transparent);animation:drip 2s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}55%{transform:scaleY(1);transform-origin:top}56%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ================= 通用分区 ================= */
+.sec{padding:150px 0}
+.sec.tight{padding:110px 0}
+.sec-dark{background:var(--bg);color:var(--text-d)}
+.sec-dark .slash-title{color:#fff}
+.sec-dark .eyebrow{color:var(--muted-d)}
+.sec-dark .eyebrow b{color:var(--amber-d)}
+.wm{position:absolute;font-family:"Manrope",sans-serif;font-weight:900;color:var(--ink);opacity:.045;line-height:1;pointer-events:none;user-select:none;white-space:nowrap}
+.sec-dark .wm{color:#fff;opacity:.05}
+
+/* ================= Our Story ================= */
+.story{position:relative;overflow:hidden}
+.story .wm{right:-140px;top:-60px;font-size:min(340px,26vw)}
+.story-grid{display:grid;grid-template-columns:1fr;gap:0;align-items:start}
+.story-copy{max-width:880px}
+.story-copy p{margin:0 0 26px;font-size:17px;line-height:1.9}
+.story-copy p.lead{font-size:21px;line-height:1.8;color:var(--ink);font-weight:500}
+.story-copy p.lead em{font-style:normal;color:var(--amber);font-weight:700}
+.fact-table{border-top:3px solid var(--ink)}
+.fact-row{display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding:20px 4px;border-bottom:1px solid var(--hair-l)}
+.fact-row dt{font-family:"Manrope",sans-serif;font-size:11.5px;letter-spacing:.1em;color:var(--muted-l)}
+.fact-row dd{margin:0;font-size:15.5px;font-weight:700;color:var(--ink);text-align:right}
+.story-more{margin-top:38px}
+
+/* ================= About · 长叙事页 ================= */
+.about-story .prose p{margin:0 0 26px}
+.about-quote{margin-top:56px;padding-left:26px;border-left:3px solid var(--amber);font-size:clamp(22px,2.6vw,30px);font-weight:700;color:var(--ink);line-height:1.55;max-width:780px}
+.commit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:56px}
+.commit-card{border-top:3px solid var(--ink);padding-top:26px}
+.commit-no{font-family:"Manrope",sans-serif;font-size:11.5px;letter-spacing:.12em;color:var(--muted-l);margin:0 0 16px}
+.commit-card h3{font-size:22px;color:var(--ink);margin:0 0 12px}
+.commit-card>p{font-size:15.5px;line-height:1.85;color:var(--body-l)}
+.value-item{padding:13px 0;border-bottom:1px solid var(--hair-l)}
+.value-item:last-child{border-bottom:0}
+.value-item b{display:block;font-size:15.5px;color:var(--ink)}
+.value-item span{font-size:14px;color:var(--muted-l)}
+.about-cta{margin-top:110px;border-top:1px solid var(--hair-l);padding-top:56px;display:flex;justify-content:space-between;align-items:center;gap:26px;flex-wrap:wrap}
+.about-cta h3{font-size:clamp(20px,2.2vw,26px);color:var(--ink);font-weight:800}
+.about-cta p{margin-top:8px;font-size:15px;color:var(--body-l)}
+
+/* ================= 数字统计 ================= */
+.stats{border-top:1px solid var(--hair-l);margin-top:110px;padding-top:64px;display:grid;grid-template-columns:repeat(4,1fr);gap:44px}
+.stat{border-bottom:3px solid var(--ink);padding-bottom:26px}
+.stat-num{display:flex;align-items:baseline;gap:4px;font-family:"Manrope",sans-serif;font-weight:800;font-size:clamp(44px,4.4vw,64px);line-height:1;color:var(--ink)}
+.stat-num .unit{font-size:.42em;font-weight:700;color:var(--muted-l)}
+.stat:nth-child(1) .stat-num{color:var(--blue)}
+.stat:nth-child(2) .stat-num{color:var(--amber)}
+.stat:nth-child(3) .stat-num{color:var(--olive)}
+.stat:nth-child(4) .stat-num{color:var(--brick)}
+.stat-label{margin-top:12px;font-size:14px;color:var(--muted-l)}
+.stat-label b{display:block;font-family:"Manrope",sans-serif;font-size:10px;letter-spacing:.12em;font-weight:500;color:var(--muted-l);margin-top:3px}
+
+/* ================= 服务轮播（深底） ================= */
+.brands-sec{position:relative;overflow:hidden}
+.brands-sec .wm{left:-120px;bottom:-70px;font-size:min(360px,28vw)}
+.carousel{position:relative}
+.car-track{--car-inset:max(40px,calc((100vw - var(--container))/2));display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;align-items:stretch;padding:10px var(--car-inset) 30px}
+.b-card{position:relative;min-height:300px;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:26px 24px;transition:transform .3s var(--ease),box-shadow .3s var(--ease);isolation:isolate}
+.b-card::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(120% 90% at 80% 10%,var(--tint) 0%,transparent 55%),linear-gradient(180deg,rgba(255,255,255,.07),rgba(0,0,0,.28)),#1A1A1A}
+.b-card::after{content:"";position:absolute;inset:0;z-index:-1;border:1px solid rgba(255,255,255,.14);border-radius:14px}
+.b-card:hover{transform:scale(1.08);z-index:5;box-shadow:0 26px 60px rgba(0,0,0,.4)}
+.b-card .b-no{font-family:"Manrope",sans-serif;font-size:11px;letter-spacing:.16em;color:rgba(255,255,255,.72)}
+.b-card .b-big{position:absolute;right:14px;bottom:-30px;font-family:"Manrope",sans-serif;font-weight:900;font-size:170px;line-height:1;color:rgba(255,255,255,.06)}
+.b-card h3{font-size:24px;font-weight:900;color:#fff;line-height:1.4}
+.b-card p{font-size:13px;line-height:1.8;color:rgba(255,255,255,.62);margin-top:10px}
+.b-card .b-go{margin-top:16px;font-family:"Manrope",sans-serif;font-size:11px;letter-spacing:.14em;color:var(--tint-l)}
+
+/* ================= 新闻 ================= */
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.news-card{display:block;background:var(--bg);overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.news-card:hover{transform:translateY(-6px);box-shadow:0 24px 54px rgba(0,0,0,.18)}
+.news-thumb{height:300px;overflow:hidden;position:relative}
+.news-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.news-card:hover .news-thumb img{transform:scale(1.06)}
+.news-thumb .ph{width:100%;height:100%;background:linear-gradient(135deg,#111111 0%,#222222 55%,#333333 100%)}
+.news-content{padding:26px 28px 30px}
+.news-cat{font-family:"Manrope",sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#fff}
+.news-cat::before{content:"/ ";color:var(--amber-d);font-weight:700}
+.news-title{margin-top:12px;font-size:21px;line-height:1.5;font-weight:700;color:#fff}
+.news-card:hover .news-title{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1.5px}
+.news-date{margin-top:14px;font-family:"Manrope",sans-serif;font-size:11px;color:var(--muted-d)}
+.news-feature .news-thumb{height:420px}
+.news-feature .news-title{font-size:25px}
+@media (max-width:900px){.news-grid{grid-template-columns:1fr}}
+
+/* ================= CTA 带 ================= */
+.cta-band{background:var(--bg);position:relative;overflow:hidden;text-align:center;padding:130px 0}
+.cta-band .wm{left:50%;transform:translateX(-50%);bottom:-56px;font-size:min(300px,24vw)}
+.cta-band h2{position:relative;font-size:clamp(30px,3.8vw,50px);font-weight:900;color:#fff;line-height:1.4}
+.cta-band p{position:relative;margin:24px auto 0;max-width:560px;color:var(--text-d)}
+.cta-band .cta-actions{position:relative;margin-top:44px;display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+
+/* ================= 页脚 ================= */
+.footer{background:#000000;color:#919191;position:relative;border-top:6px solid;border-image:linear-gradient(90deg,var(--blue-d),var(--amber-d),var(--olive-d),var(--brick-d),var(--violet-d)) 1}
+.footer-top{display:grid;grid-template-columns:1.3fr .8fr .8fr 1.1fr;gap:48px;padding:80px 0 60px}
+.footer h4{font-size:13px;letter-spacing:.1em;color:#FFFFFF;margin:0 0 20px;font-weight:700}
+.footer h4 .mono{color:var(--amber-d);margin-right:8px}
+.footer a,.footer p{font-size:13.5px;line-height:2.1;color:#919191}
+.footer a:hover{color:#fff}
+.f-brand .brand-text strong{color:#fff}
+.f-contact .fi{margin-bottom:18px}
+.f-contact .fi b{display:block;font-size:12px;letter-spacing:.08em;color:#F4F4F4;font-weight:700;margin-bottom:2px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding:24px 0 40px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px;color:#919191}
+
+/* ================= 内页页头 ================= */
+.page-hero{position:relative;background:var(--bg);overflow:hidden;padding:calc(var(--nav-h) + 90px) 0 90px}
+.page-hero .bgimg{position:absolute;inset:0;background:var(--ph-img,none) center/cover no-repeat;opacity:.38}
+.page-hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.5),rgba(0,0,0,.92))}
+.page-hero .container{position:relative;z-index:2}
+.crumb{font-family:"Manrope",sans-serif;font-size:11px;letter-spacing:.14em;color:var(--muted-d)}
+.crumb a:hover{color:var(--amber-d)}
+.page-hero h1{margin-top:20px;font-size:clamp(40px,5.6vw,72px);font-weight:900;line-height:1.12;color:#fff}
+.page-hero h1::before{content:"/ ";color:var(--amber-d)}
+.page-hero .ph-en{margin-top:16px;font-family:"Manrope",sans-serif;font-size:12px;letter-spacing:.18em;color:var(--muted-d)}
+
+/* ================= 内页正文区 ================= */
+.page-body{padding:110px 0 140px}
+.prose{max-width:760px}
+.prose p{margin:0 0 24px;font-size:17px;line-height:1.95}
+.prose p.lead{font-size:20px;color:var(--ink);font-weight:500;line-height:1.8}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.figure{border-radius:14px;overflow:hidden;border:1px solid var(--hair-l)}
+.figure img{width:100%;height:100%;object-fit:cover}
+.cap{margin-top:12px;font-family:"Manrope",sans-serif;font-size:11px;color:var(--muted-l)}
+.list-block{border-top:3px solid var(--ink);margin-top:14px}
+.list-block li{display:flex;gap:18px;padding:22px 4px;border-bottom:1px solid var(--hair-l);list-style:none}
+.list-block ul{margin:0;padding:0}
+.list-block .li-no{font-family:"Manrope",sans-serif;font-size:12px;color:var(--amber);padding-top:3px;flex-shrink:0}
+.list-block b{display:block;color:var(--ink);font-size:16.5px;margin-bottom:4px}
+.list-block span{font-size:14px;color:var(--body-l)}
+.member-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:60px}
+.member{background:#fff;border:1px solid var(--hair-l);padding:30px;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.member:hover{transform:translateY(-5px);box-shadow:0 20px 46px rgba(0,0,0,.1)}
+.member .m-role{font-family:"Manrope",sans-serif;font-size:10.5px;letter-spacing:.14em;color:var(--amber)}
+.member h3{margin-top:12px;font-size:19px;color:var(--ink);font-weight:800}
+.member .m-en{font-family:"Manrope",sans-serif;font-size:12.5px;color:var(--muted-l);margin-top:2px}
+.member p{margin-top:14px;font-size:13.5px;line-height:1.8;color:var(--body-l)}
+.news-list li{display:grid;grid-template-columns:110px 1fr;gap:30px;padding:30px 4px;border-bottom:1px solid var(--hair-l);align-items:baseline;transition:background .25s}
+.news-list{margin:0;padding:0;list-style:none;border-top:3px solid var(--ink)}
+.news-list li:hover{background:rgba(0,0,0,.03)}
+.news-list time{font-family:"Manrope",sans-serif;font-size:12px;color:var(--muted-l)}
+.news-list h3{font-size:19px;color:var(--ink);font-weight:700;line-height:1.6}
+.news-list a:hover h3{text-decoration:underline;text-underline-offset:4px}
+.tag-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.tag{font-family:"Manrope",sans-serif;font-size:11px;letter-spacing:.1em;padding:7px 14px;border:1px solid var(--hair-l);border-radius:100px;color:var(--muted-l)}
+.sub-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px}
+.sub-nav a{font-size:13px;font-weight:600;padding:10px 18px;border:1px solid var(--hair-l);border-radius:100px;color:var(--ink-soft);transition:all .25s}
+.sub-nav a:hover,.sub-nav a.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* 联系页（结构 / 视觉对齐 valnetinc.com/en/contact） */
+.ct-sec{margin-top:104px}
+.ct-sec-first{margin-top:0}
+.ct-h2{font-family:"Manrope","PingFang SC",sans-serif;font-size:clamp(40px,6.2vw,74px);font-weight:800;line-height:1.05;letter-spacing:-.02em;text-transform:uppercase;color:var(--ink);margin-bottom:46px}
+.ct-h2::before{content:"/ ";color:var(--blue);font-weight:800}
+.ct-h3{font-family:"Manrope","PingFang SC",sans-serif;font-size:clamp(26px,3.1vw,36px);font-weight:800;line-height:1.2;color:var(--ink);margin-bottom:36px}
+.loc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:54px 26px}
+.loc-ph{overflow:hidden;border-radius:2px;background:var(--paper-deep)}
+.loc-ph img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;filter:grayscale(1) contrast(1.05);transition:transform .7s var(--ease)}
+.loc-card:hover .loc-ph img{transform:scale(1.045)}
+.loc-card h3{font-size:26px;font-weight:700;line-height:1.2;color:var(--ink);margin:24px 0 10px;letter-spacing:-.01em}
+.loc-card p{font-size:16px;line-height:1.62;color:var(--ink);max-width:36ch}
+.ct-channels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:38px 26px;align-items:start}
+.ct-channels.ct-talks{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ct-ch h4{font-size:22px;font-weight:700;line-height:1.2;color:var(--ink);margin-bottom:10px}
+.ct-ch p{font-size:16px;line-height:1.55;color:var(--ink)}
+.ct-ch a{font-size:16px;line-height:1.55;color:var(--blue)}
+.ct-ch a:hover{text-decoration:underline;text-underline-offset:4px}
+.ct-ico-link{display:inline-flex;align-items:center;gap:9px}
+.ct-ico{width:15px;height:15px;flex-shrink:0;color:var(--blue)}
+.ct-ch .qr{display:block;margin-top:16px;width:72px;height:72px;border:1px solid var(--hair-l);border-radius:8px;background:#FFFFFF;padding:4px}
+
+/* 首页 · 办公地点（与联系页呼应） */
+.home-office{background:var(--paper);border-top:1px solid var(--hair-l);padding:120px 0}
+.home-office .ho-grid{display:grid;grid-template-columns:1fr 1fr;gap:76px;align-items:center}
+.home-office .ho-lead{font-size:19px;line-height:1.76;color:var(--ink);margin-top:22px;max-width:46ch}
+.home-office .ho-meta{font-size:16px;line-height:1.6;color:var(--muted-l);margin-top:12px}
+.home-office .ho-ph{overflow:hidden;border-radius:2px;background:var(--paper-deep)}
+.home-office .ho-ph img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+
+/* Logo 滚动卡牌（marquee） */
+.lm-wrap{overflow:hidden;padding:8px 0 4px;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 80px,#000 calc(100% - 80px),transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 80px,#000 calc(100% - 80px),transparent)}
+.lm-track{display:flex;width:max-content;animation:lm-scroll var(--lm-dur,55s) linear infinite}
+.lm-wrap:hover .lm-track{animation-play-state:paused}
+.lm-wrap,.ex-rail,.cm-grid{touch-action:pan-y;cursor:grab}
+.lm-wrap.dragging,.ex-rail.dragging,.cm-grid.dragging{cursor:grabbing}
+.lm-track,.ex-track,.cm-track{user-select:none;-webkit-user-select:none}
+.lm-card img{-webkit-user-drag:none}
+.lm-card{width:340px;flex-shrink:0;margin-right:22px;background:#fff;border:1px solid var(--hair-l);border-radius:12px;padding:26px 28px 20px;display:flex;flex-direction:column;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.lm-card:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(0,0,0,.1)}
+.lm-logo{height:54px;display:flex;align-items:center;margin-bottom:16px}
+.lm-logo img{max-height:48px;max-width:212px;object-fit:contain}
+.lm-name{font-weight:800;font-size:15px;color:var(--ink);letter-spacing:.02em}
+.lm-mark{width:44px;height:44px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:19px;font-family:"Manrope","PingFang SC",sans-serif;flex-shrink:0;letter-spacing:0}
+.lm-code{display:inline-block;margin-left:8px;padding:2px 7px;border-radius:6px;background:rgba(0,0,0,.05);border:1px solid var(--hair-l);color:rgba(0,0,0,.6);font-family:"Manrope",sans-serif;font-size:10.5px;letter-spacing:.03em;font-weight:500;vertical-align:2px;white-space:nowrap}
+.lm-line{margin-top:8px;font-size:13px;line-height:1.6;color:var(--muted-l);border-top:1px solid var(--hair-l);padding-top:10px}
+@keyframes lm-scroll{to{transform:translateX(-50%)}}
+/* 案例页四行同步滚动网格 */
+.cm-grid{overflow:hidden;padding:8px 0 4px}
+.cm-row+.cm-row{margin-top:18px}
+.cm-track{display:flex;width:max-content;animation:lm-scroll var(--cm-dur,210s) linear infinite}
+.cm-grid:hover .cm-track{animation-play-state:paused}
+a.lm-card{cursor:pointer;text-decoration:none}
+.lm-card[aria-hidden="true"]{pointer-events:none}
+@media (prefers-reduced-motion:reduce){
+  .lm-track,.cm-track{animation:none;flex-wrap:wrap;width:auto}
+  .lm-card{margin-bottom:22px}
+  .cm-grid .lm-card[aria-hidden="true"]{display:none}
+  [aria-hidden="true"].lm-card{display:none}
+}
+@media (max-width:640px){.lm-card{width:262px}.lm-logo{height:44px;margin-bottom:12px}.lm-logo img{max-height:38px;max-width:160px}}
+
+/* 合作平台带 */
+.plat-band{background:var(--paper-deep);border-top:1px solid var(--hair-l);border-bottom:1px solid var(--hair-l);padding:64px 0 60px}
+.plat-head{margin-bottom:36px}
+.plat-head .lead{margin-top:14px!important;font-size:15px!important;color:var(--muted-l)!important}
+
+/* ================= 国际展会（our-brands 式方卡全宽卡带） ================= */
+.ex-band{position:relative;background:#111111;color:var(--text-d);padding:118px 0 0;border-top:1px solid var(--hair-d);overflow:hidden}
+.ex-band .slash-title{color:#fff}
+.ex-band .eyebrow{color:var(--muted-d)}
+.ex-band .eyebrow b{color:var(--amber-d)}
+.ex-band .sec-head{margin-bottom:44px}
+.ex-band .lead{margin-top:18px!important;font-size:15px!important;line-height:1.85!important;color:var(--muted-d)!important;max-width:660px}
+.ex-rail{width:100vw;margin-left:calc(-50vw + 50%);overflow:hidden;padding:10px 0 100px;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 7vw,#000 calc(100% - 7vw),transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 7vw,#000 calc(100% - 7vw),transparent)}
+.ex-track{display:flex;width:max-content;animation:ex-scroll var(--ex-dur,88s) linear infinite}
+.ex-rail:hover .ex-track{animation-play-state:paused}
+.ex-card{position:relative;flex:0 0 340px;width:340px;height:374px;margin-right:20px;border-radius:14px;overflow:hidden;
+  padding:26px 26px 24px;display:flex;flex-direction:column;justify-content:space-between;isolation:isolate;
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.ex-photo{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center;
+  transform:scale(1.02);transition:transform .7s var(--ease)}
+.ex-card:hover .ex-photo,.ex-card:focus-visible .ex-photo{transform:scale(1.09)}
+.ex-card{background:linear-gradient(180deg,#1A1A1A 0%,#000000 100%)}
+.ex-card::before{content:"";position:absolute;inset:0;z-index:2;background:
+  linear-gradient(180deg,rgba(0,0,0,.66) 0%,rgba(0,0,0,.26) 38%,rgba(0,0,0,.34) 60%,rgba(0,0,0,.88) 100%),
+  radial-gradient(132% 96% at 50% 122%,var(--exg) 0%,transparent 58%)}
+.ex-card::after{content:"";position:absolute;inset:0;z-index:3;border:1px solid rgba(255,255,255,.12);border-radius:14px;pointer-events:none;
+  transition:border-color .4s var(--ease)}
+.ex-grid{position:absolute;inset:0;z-index:1;background-image:
+  linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:44px 44px;
+  -webkit-mask-image:radial-gradient(130% 96% at 50% 108%,#000 0%,transparent 74%);
+  mask-image:radial-gradient(130% 96% at 50% 108%,#000 0%,transparent 74%)}
+.ex-card:hover,.ex-card:focus-visible{transform:translateY(-8px) scale(1.035);z-index:6;box-shadow:0 30px 70px rgba(0,0,0,.5);outline:none}
+.ex-card:hover::after,.ex-card:focus-visible::after{border-color:rgba(255,255,255,.32)}
+.ex-top{position:relative;z-index:4;display:flex;align-items:center;justify-content:space-between;font-family:"Manrope",sans-serif;font-size:11px;letter-spacing:.16em}
+.ex-idx{color:var(--ex)}
+.ex-mo{color:rgba(255,255,255,.46)}
+.ex-mark{position:relative;z-index:4;font-family:"Manrope",sans-serif;font-weight:900;font-size:52px;line-height:1;letter-spacing:-.02em;color:#fff;text-align:center;
+  text-shadow:0 2px 26px rgba(0,0,0,.5);transition:letter-spacing .4s var(--ease)}
+.ex-card:hover .ex-mark{letter-spacing:.01em}
+.ex-mark.m{font-size:33px;letter-spacing:.005em}
+.ex-mark.s{font-size:25px;letter-spacing:.02em;line-height:1.3}
+.ex-bot{position:relative;z-index:4;border-top:1px solid rgba(255,255,255,.14);padding-top:16px}
+.ex-cn{font-size:14px;font-weight:700;color:#F4F4F4;line-height:1.5}
+.ex-loc{margin-top:7px;font-family:"Manrope",sans-serif;font-size:11px;letter-spacing:.08em;color:var(--muted-d)}
+.ex-c1{--ex:#1E74AF;--exg:rgba(30,116,175,.27)}
+.ex-c2{--ex:#1E74AF;--exg:rgba(30,116,175,.25)}
+.ex-c3{--ex:#1E74AF;--exg:rgba(30,116,175,.25)}
+.ex-c4{--ex:#1E74AF;--exg:rgba(30,116,175,.25)}
+.ex-c5{--ex:#1E74AF;--exg:rgba(30,116,175,.27)}
+@keyframes ex-scroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){
+  .ex-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center;padding:0 24px}
+  .ex-card{margin-bottom:20px}
+  .ex-ghost{display:none}
+}
+@media (max-width:900px){
+  .ex-band{padding-top:92px}
+  .ex-rail{padding-bottom:74px}
+  .ex-card{flex:0 0 286px;width:286px;height:326px;padding:22px 22px 20px}
+  .ex-mark{font-size:42px}
+  .ex-mark.m{font-size:27px}
+  .ex-mark.s{font-size:21px}
+  .ex-cn{font-size:13px}
+}
+
+/* ================= 二级页面：富内容组件 ================= */
+.blk{margin-top:124px}
+.blk-head{max-width:880px;margin-bottom:48px}
+.blk-title{font-size:clamp(30px,3.4vw,46px);margin-top:14px}
+.blk-lead{margin-top:20px;font-size:15.5px;line-height:1.92;color:var(--body-l)}
+.blk-note{margin-top:22px;font-size:12.5px;color:var(--muted-l)}
+.blk-note b{color:var(--amber);font-weight:500}
+
+/* 合作平台深度卡 */
+.pf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pf-card{position:relative;background:#fff;border:1px solid var(--hair-l);border-radius:12px;padding:34px 30px 28px;
+  display:flex;flex-direction:column;overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.pf-card::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--pf,#1E74AF)}
+.pf-card:hover{transform:translateY(-6px);box-shadow:0 24px 56px rgba(0,0,0,.11)}
+.pf-logo{height:46px;display:flex;align-items:center;margin-bottom:20px}
+.pf-logo img{max-height:42px;max-width:196px;object-fit:contain}
+.pf-name{font-size:17px;font-weight:800;color:var(--ink);letter-spacing:.01em}
+.pf-en{margin-top:5px;font-family:"Manrope",sans-serif;font-size:10px;letter-spacing:.13em;color:var(--muted-l)}
+.pf-line{margin-top:16px;font-size:14px;line-height:1.78;color:var(--body-l)}
+.pf-ul{margin:22px 0 0;padding:0;list-style:none;border-top:1px solid var(--hair-l)}
+.pf-ul li{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--hair-l);
+  font-size:13px;line-height:1.72;color:var(--muted-l);list-style:none}
+.pf-ul b{font-family:"Manrope",sans-serif;font-size:10px;letter-spacing:.08em;color:var(--pf,#1E74AF);font-weight:500;padding-top:3px}
+
+/* 交易所覆盖 */
+.exch{display:grid;grid-template-columns:repeat(3,1fr);border-top:3px solid var(--ink)}
+.exch-c{padding:34px 30px 32px;border-right:1px solid var(--hair-l);border-bottom:1px solid var(--hair-l)}
+.exch-c:last-child{border-right:0}
+.x-code{font-family:"Manrope",sans-serif;font-weight:900;font-size:32px;line-height:1;letter-spacing:-.01em;color:var(--ink)}
+.x-cn{margin-top:12px;font-size:16px;font-weight:800;color:var(--ink)}
+.x-mk{margin-top:6px;font-family:"Manrope",sans-serif;font-size:10px;letter-spacing:.13em;color:var(--muted-l)}
+.x-d{margin-top:16px;font-size:13.5px;line-height:1.78;color:var(--body-l)}
+
+/* 年度节奏时间线 */
+.tl{margin-top:10px;border-top:3px solid var(--ink)}
+.tl-row{display:grid;grid-template-columns:132px 190px 1fr;gap:28px;padding:24px 4px;border-bottom:1px solid var(--hair-l);align-items:baseline}
+.tl-when{font-family:"Manrope",sans-serif;font-size:12.5px;letter-spacing:.03em;color:var(--amber)}
+.tl-what{font-size:16px;font-weight:800;color:var(--ink)}
+.tl-how{font-size:14px;line-height:1.82;color:var(--body-l)}
+
+/* 展会网格（复用 .ex-card 视觉） */
+.exg{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:20px}
+.exg .ex-card{flex:0 0 auto;width:100%;height:auto;aspect-ratio:340/374;margin-right:0;padding:20px 18px 18px}
+.exg .ex-top{font-size:10px;letter-spacing:.12em}
+.exg .ex-mark{font-size:38px}
+.exg .ex-mark.m{font-size:24px}
+.exg .ex-mark.s{font-size:17px}
+.exg .ex-bot{padding-top:12px}
+.exg .ex-cn{font-size:12.5px}
+.exg .ex-loc{margin-top:5px;font-size:10px;letter-spacing:.06em}
+
+/* 展会年历表 */
+.cal-scroll{overflow-x:auto;margin-top:10px;padding-bottom:6px}
+.cal{width:100%;min-width:820px;border-collapse:collapse;border-top:3px solid var(--ink)}
+.cal th{font-family:"Manrope",sans-serif;font-size:10px;letter-spacing:.14em;font-weight:500;color:var(--muted-l);
+  text-align:left;padding:16px 14px;border-bottom:1px solid var(--hair-l)}
+.cal td{padding:20px 14px;border-bottom:1px solid var(--hair-l);font-size:14px;line-height:1.7;color:var(--body-l);vertical-align:top}
+.cal tbody tr{transition:background .25s}
+.cal tbody tr:hover{background:rgba(0,0,0,.03)}
+.cal .c-name{font-size:15px;font-weight:800;color:var(--ink)}
+.cal .c-name em{display:block;margin-top:4px;font-family:"Manrope",sans-serif;font-size:10px;letter-spacing:.1em;font-style:normal;font-weight:400;color:var(--muted-l)}
+.cal .c-when{font-family:"Manrope",sans-serif;font-size:12.5px;color:var(--amber);white-space:nowrap}
+.cal .c-loc{white-space:nowrap}
+
+/* 流程四段 */
+.ph-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:3px solid var(--ink)}
+.ph-c{padding:30px 26px 28px;border-right:1px solid var(--hair-l);border-bottom:1px solid var(--hair-l)}
+.ph-c:last-child{border-right:0}
+.ph-no{font-family:"Manrope",sans-serif;font-size:10px;letter-spacing:.14em;color:var(--amber)}
+.ph-c h4{margin-top:12px;font-size:17px;font-weight:800;color:var(--ink)}
+.ph-c ul{margin:18px 0 0;padding:0;list-style:none}
+.ph-c li{position:relative;padding-left:15px;margin-bottom:10px;font-size:13.5px;line-height:1.72;color:var(--body-l);list-style:none}
+.ph-c li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--ph,#1E74AF)}
+
+@media (max-width:1080px){
+  .pf-grid{grid-template-columns:1fr 1fr}
+  .ph-grid{grid-template-columns:1fr 1fr}
+  .ph-c:nth-child(2n){border-right:0}
+  .exch{grid-template-columns:1fr}
+  .exch-c{border-right:0}
+  .tl-row{grid-template-columns:120px 1fr;gap:8px 24px}
+  .tl-how{grid-column:2}
+}
+@media (max-width:760px){
+  .blk{margin-top:84px}
+  .pf-grid{grid-template-columns:1fr}
+  .ph-grid{grid-template-columns:1fr}
+  .ph-c{border-right:0}
+  .tl-row{grid-template-columns:1fr;gap:6px}
+  .tl-how{grid-column:1}
+}
+
+/* ================= 进场动效 ================= */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+.reveal-d1{transition-delay:.1s}.reveal-d2{transition-delay:.2s}.reveal-d3{transition-delay:.3s}
+.hero .reveal{transform:translateY(40px)}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .hero-bg{animation:none}
+  .page.active{animation:none}
+}
+
+/* ================= 响应式 ================= */
+@media (max-width:1100px){
+  .story-grid,.two-col,.home-office .ho-grid{grid-template-columns:1fr;gap:44px}
+  .stats{grid-template-columns:1fr 1fr;margin-top:80px}
+  .commit-grid{grid-template-columns:1fr;gap:28px}
+  .footer-top{grid-template-columns:1fr 1fr;gap:40px}
+  .sec{padding:110px 0}
+}
+@media (max-width:1000px){
+  .member-grid{grid-template-columns:1fr 1fr}
+  .loc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ct-channels{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sec-head{flex-direction:column;align-items:flex-start}
+  .car-track{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  :root{--nav-h:70px}
+  .container{padding:0 22px}
+  .sec,.page-body{padding:80px 0}
+  .sec.tight{padding:70px 0}
+  .hero-inner{padding-bottom:80px}
+  .hero-cta{gap:20px}
+  .car-track{--car-inset:22px;grid-template-columns:1fr;gap:16px}
+  .br-m{display:none}
+  .hero h1{font-size:clamp(28px,8.4vw,42px)}
+  .stats{grid-template-columns:1fr 1fr;gap:28px}
+  .b-card{min-height:220px;padding:24px 22px}
+  .b-card h3{font-size:20px}
+  .b-card .b-big{font-size:120px;bottom:-18px}
+  .news-feature .news-thumb{height:240px}
+  .news-thumb{height:200px}
+  .footer-top{grid-template-columns:1fr;gap:34px;padding:60px 0 40px}
+  .member-grid{grid-template-columns:1fr}
+  .news-list li{grid-template-columns:1fr;gap:6px}
+  .hero-scroll{display:none}
+  .ct-sec{margin-top:64px}
+  .ct-h2{font-size:clamp(32px,9vw,44px);margin-bottom:30px}
+  .ct-h3{font-size:24px;margin-bottom:26px}
+  .loc-grid{grid-template-columns:1fr;gap:38px}
+  .loc-card h3{font-size:22px;margin-top:18px}
+  .ct-channels,.ct-channels.ct-talks{grid-template-columns:1fr;gap:26px}
+  .ct-ch h4{font-size:19px}
+  .home-office{padding:80px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= 导航 ================= -->
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a aria-label="3SAMIO 赛明欧 首页" class="brand" href="#/">
+      <span class="logo-box"><span class="l3">3</span><span class="lS">S</span></span>
+      <span class="brand-text"><strong>3SAMIO</strong><small>赛明欧</small></span>
+    </a>
+    <nav aria-label="主导航" class="nav-links">
+      <div class="nav-item"><a data-nav="/about" href="#/about">关于我们</a></div>
+      <div class="nav-item">
+        <a data-nav="/services" href="#/services">服务 <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="#/services/cn-media"><span class="mono-no">01</span>财经媒体关系</a>
+          <a href="#/services/global-media"><span class="mono-no">02</span>国际媒体关系</a>
+          <a href="#/services/reputation"><span class="mono-no">03</span>舆情管理与搜索优化</a>
+          <a href="#/services/ir"><span class="mono-no">04</span>投资者关系传播</a>
+          <a href="#/services/events"><span class="mono-no">05</span>国际展会传播</a>
+        </div>
+      </div>
+      <div class="nav-item"><a data-nav="/cases" href="#/cases">客户案例</a></div>
+      <div class="nav-item"><a data-nav="/contact" href="#/contact">联系我们</a></div>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="切换语言 Switch Language"><span data-lang-opt="zh">中</span><span class="lt-sep" aria-hidden="true">/</span><span data-lang-opt="en">EN</span></button>
+      <a class="nav-cta" href="#/contact">预约咨询</a>
+      <button aria-expanded="false" aria-label="打开菜单" class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav aria-label="移动端导航" class="mobile-menu">
+    <a href="#/">首页</a>
+    <a href="#/about">关于我们</a>
+    <a href="#/services">服务</a>
+    <a class="mm-sub" href="#/services/cn-media">财经媒体关系</a>
+    <a class="mm-sub" href="#/services/global-media">国际媒体关系</a>
+    <a class="mm-sub" href="#/services/reputation">舆情管理与搜索优化</a>
+    <a class="mm-sub" href="#/services/ir">投资者关系传播</a>
+    <a class="mm-sub" href="#/services/events">国际展会传播</a>
+    <a href="#/cases">客户案例</a>
+    <a href="#/contact">联系我们</a>
+  </nav>
+</header>
+
+<main id="app">
+
+<!-- ================= 首页 ================= -->
+<section class="page" data-route="/" data-title="3SAMIO 赛明欧 — 财经传播与投资者关系">
+
+  <div class="hero" id="hero">
+    <div aria-label="全球资本流动视觉" class="hero-bg" role="img"></div>
+    <div class="hero-shade"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow reveal" style="color:var(--amber-d)"><b>/ FINANCIAL COMMUNICATION</b>&nbsp;&nbsp;SHANGHAI · EST. 2024</p>
+      <h1 class="reveal reveal-d1" style="margin-top:26px">让中国企业的声音<br><span class="hl">被全球资本市场听见</span></h1>
+      <p class="hero-sub reveal reveal-d2">3SAMIO 赛明欧专注于财经传播与投资者关系服务，覆盖国内国际财经媒体关系、舆情管理与搜索优化、投资者关系传播与国际展会传播，帮助企业高效触达全球资本市场。</p>
+      <div class="hero-cta reveal reveal-d3">
+        <a class="btn-solid" href="#/contact">预约咨询</a>
+        <a class="btn-line on-dark" href="#/services">了解核心服务 <span class="arr"></span></a>
+      </div>
+    </div>
+    <div class="hero-scroll en">SCROLL</div>
+  </div>
+  <div class="hero-band"></div>
+
+  <!-- Our Story -->
+  <div class="sec story" style="position:relative">
+    <span aria-hidden="true" class="wm en">3SAMIO</span>
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-copy">
+          <p class="eyebrow reveal"><b>01 / OUR STORY</b></p>
+          <h2 class="slash-title sec-title reveal reveal-d1" style="margin-top:14px">我们的<br class="br-m">故事</h2>
+          <p class="lead reveal reveal-d2" style="margin-top:34px">3SAMIO 赛明欧成立于 2024 年，总部位于上海。我们以<em>「让中国企业的声音被世界听见」</em>为使命，为上市公司、拟上市企业与出海企业提供覆盖全周期的财经传播解决方案。</p>
+          <p class="reveal reveal-d2">团队核心成员来自一线财经媒体与国际传播机构，兼具媒体资源、资本市场理解与跨文化执行能力，服务网络覆盖中国大陆、港澳台及全球主要金融中心。</p>
+          <div class="story-more reveal reveal-d3"><a class="btn-line" href="#/about">了解更多 <span class="arr"></span></a></div>
+        </div>
+              </div>
+
+      <!-- Our Network -->
+      <div class="stats" id="network">
+        <div class="stat reveal"><p class="stat-num"><span class="countable" data-end="5">0</span><span class="unit">大</span></p><p class="stat-label">核心服务板块<b>SERVICE LINES</b></p></div>
+        <div class="stat reveal reveal-d1"><p class="stat-num"><span class="countable" data-end="3">0</span><span class="unit">大</span></p><p class="stat-label">交易所覆盖（沪 · 深 · 港）<b>EXCHANGES COVERED</b></p></div>
+        <div class="stat reveal reveal-d2"><p class="stat-num"><span class="countable" data-end="2">0</span><span class="unit">种</span></p><p class="stat-label">中英双语工作语言<b>WORKING LANGUAGES</b></p></div>
+        <div class="stat reveal reveal-d3"><p class="stat-num"><span class="countable" data-end="24">0</span><span class="unit">/7</span></p><p class="stat-label">全网舆情实时监测<b>REPUTATION MONITORING</b></p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 核心服务轮播 -->
+  <div class="sec sec-dark brands-sec" style="position:relative">
+    <span aria-hidden="true" class="wm en">SERVICES</span>
+    <div class="container">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow"><b>02 / CORE SERVICES</b></p>
+          <h2 class="slash-title sec-title">核心服务</h2>
+        </div>
+        <a class="btn-line on-dark" href="#/services">查看全部服务 <span class="arr"></span></a>
+      </div>
+    </div>
+    <div class="carousel">
+      <div class="car-track" id="carTrack">
+        <a class="b-card" href="#/services/cn-media" style="--tint:rgba(30,116,175,.5); --tint-l:#1E74AF">
+          <span class="b-no">SERVICE 01</span><span class="b-big en">01</span>
+          <div><h3>财经媒体关系</h3><p>覆盖中国大陆及港澳台地区的中文财经媒体网络，稿件发布、深度专访与高层访谈。</p></div>
+        </a>
+        <a class="b-card" href="#/services/global-media" style="--tint:rgba(30,116,175,.5); --tint-l:#1E74AF">
+          <span class="b-no">SERVICE 02</span><span class="b-big en">02</span>
+          <div><h3>国际媒体关系</h3><p>整合海外英文财经媒体资源，服务跨国传播、国际路演报道与全球品牌声量建设。</p></div>
+        </a>
+        <a class="b-card" href="#/services/reputation" style="--tint:rgba(30,116,175,.5); --tint-l:#1E74AF">
+          <span class="b-no">SERVICE 03</span><span class="b-big en">03</span>
+          <div><h3>舆情管理与搜索优化</h3><p>全网舆情实时监测与负面应对，结合搜索优化，守护企业声誉与搜索第一印象。</p></div>
+        </a>
+        <a class="b-card" href="#/services/ir" style="--tint:rgba(30,116,175,.5); --tint-l:#1E74AF">
+          <span class="b-no">SERVICE 04</span><span class="b-big en">04</span>
+          <div><h3>投资者关系传播</h3><p>面向沪深港三大交易所的信息披露传播、业绩发布、路演支持与投资者沟通。</p></div>
+        </a>
+        <a class="b-card" href="#/services/events" style="--tint:rgba(30,116,175,.5); --tint-l:#1E74AF">
+          <span class="b-no">SERVICE 05</span><span class="b-big en">05</span>
+          <div><h3>国际展会传播</h3><p>海外展会全流程传播：展前预热、现场报道到展后复盘，放大品牌国际影响力。</p></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 合作平台（滚动卡牌） -->
+  <div class="plat-band">
+    <div class="container plat-head">
+      <p class="eyebrow reveal"><b>03 / CORE PLATFORMS</b></p>
+      <h2 class="slash-title sec-title reveal reveal-d1" style="margin-top:12px">合作平台</h2>
+      <p class="lead reveal reveal-d2">深度运营雪球、富途、东方财富三大投资者社区，守护企业在投资者聚集地的每一次被讨论。</p><div class="reveal reveal-d3" style="margin-top:26px"><a class="btn-line" href="#/services/ir">属于投资者关系传播 <span class="arr"></span></a></div>
+    </div>
+    <div class="lm-wrap">
+      <div class="lm-track" style="--lm-dur:22s">
+        <div class="lm-card"><div class="lm-logo"><img alt="雪球" loading="lazy" src="images/94nCXxXfNUYkAYMtyDlI0y.png"></div><p class="lm-name">雪球 XUEQIU</p><p class="lm-line">中国最具影响力的投资者社区</p></div>
+        <div class="lm-card"><div class="lm-logo"><img alt="富途" loading="lazy" src="images/FmQHpB0cHVUtmQJoY2oIjU.png"></div><p class="lm-name">富途 FUTU</p><p class="lm-line">港美股领先的互联网券商平台</p></div>
+        <div class="lm-card"><div class="lm-logo"><img alt="东方财富" loading="lazy" src="images/IEI2rUaIgCGEqyJFhh8Rgh.png"></div><p class="lm-name">东方财富 EASTMONEY</p><p class="lm-line">中国领先的互联网财经门户</p></div>
+        <div aria-hidden="true" class="lm-card"><div class="lm-logo"><img alt loading="lazy" src="images/94nCXxXfNUYkAYMtyDlI0y.png"></div><p class="lm-name">雪球 XUEQIU</p><p class="lm-line">中国最具影响力的投资者社区</p></div>
+        <div aria-hidden="true" class="lm-card"><div class="lm-logo"><img alt loading="lazy" src="images/FmQHpB0cHVUtmQJoY2oIjU.png"></div><p class="lm-name">富途 FUTU</p><p class="lm-line">港美股领先的互联网券商平台</p></div>
+        <div aria-hidden="true" class="lm-card"><div class="lm-logo"><img alt loading="lazy" src="images/IEI2rUaIgCGEqyJFhh8Rgh.png"></div><p class="lm-name">东方财富 EASTMONEY</p><p class="lm-line">中国领先的互联网财经门户</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 国际展会（全宽滚动卡带） -->
+  <div class="ex-band">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow"><b>04 / GLOBAL EXHIBITIONS</b></p>
+          <h2 class="slash-title sec-title">国际展会</h2>
+          <p class="lead">常年驻场 CES、MWC、WAIC、IFA 等十场全球重要展会，以展前预热、现场报道到展后复盘的全流程传播，让中国企业的技术叙事在主场之外被持续听见。</p>
+        </div>
+        <a class="btn-line on-dark" href="#/services/events">国际展会传播 <span class="arr"></span></a>
+      </div>
+    </div>
+    <div class="ex-rail">
+      <div class="ex-track" style="--ex-dur:88s">
+        <a aria-label="CES 国际消费类电子产品展览会" class="ex-card ex-c1" href="#/services/events">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/XGWL40Xzvknk057cnVJ20E.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">01</span><span class="ex-mo">JAN</span></div>
+          <div class="ex-mark">CES</div>
+          <div class="ex-bot"><p class="ex-cn">国际消费类电子产品展览会</p><p class="ex-loc">美国 · 拉斯维加斯</p></div>
+        </a>
+        <a aria-label="MWC 世界移动通信大会" class="ex-card ex-c2" href="#/services/events">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/UnqSPwMrOuI4FvfGdDiTcr.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">02</span><span class="ex-mo">MAR</span></div>
+          <div class="ex-mark">MWC</div>
+          <div class="ex-bot"><p class="ex-cn">世界移动通信大会</p><p class="ex-loc">西班牙 · 巴塞罗那</p></div>
+        </a>
+        <a aria-label="HANNOVER MESSE 汉诺威工业博览会" class="ex-card ex-c3" href="#/services/events">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/tiGfVWgQXZkG1AjbOSJ03i.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">03</span><span class="ex-mo">APR</span></div>
+          <div class="ex-mark s">HANNOVER MESSE</div>
+          <div class="ex-bot"><p class="ex-cn">汉诺威工业博览会</p><p class="ex-loc">德国 · 汉诺威</p></div>
+        </a>
+        <a aria-label="CANTON FAIR 中国进出口商品交易会（广交会）" class="ex-card ex-c4" href="#/services/events">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/uWmHyWj3brcQpEYhD1TtPF.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">04</span><span class="ex-mo">APR/OCT</span></div>
+          <div class="ex-mark m">CANTON FAIR</div>
+          <div class="ex-bot"><p class="ex-cn">中国进出口商品交易会（广交会）</p><p class="ex-loc">中国 · 广州</p></div>
+        </a>
+        <a aria-label="COMPUTEX 台北国际电脑展" class="ex-card ex-c5" href="#/services/events">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/EEvXI0DnbXpfWIdERWEN6E.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">05</span><span class="ex-mo">MAY</span></div>
+          <div class="ex-mark m">COMPUTEX</div>
+          <div class="ex-bot"><p class="ex-cn">台北国际电脑展</p><p class="ex-loc">中国台北</p></div>
+        </a>
+        <a aria-label="WAIC 世界人工智能大会" class="ex-card ex-c1" href="#/services/events">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/NlyYsV7Rcf6hGC9gqXdzIc.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">06</span><span class="ex-mo">JUL</span></div>
+          <div class="ex-mark">WAIC</div>
+          <div class="ex-bot"><p class="ex-cn">世界人工智能大会</p><p class="ex-loc">中国 · 上海</p></div>
+        </a>
+        <a aria-label="IFA 柏林国际电子消费品展览会" class="ex-card ex-c2" href="#/services/events">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/5YxOFVQUkOu2WpVYKiyApy.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">07</span><span class="ex-mo">SEP</span></div>
+          <div class="ex-mark">IFA</div>
+          <div class="ex-bot"><p class="ex-cn">柏林国际电子消费品展览会</p><p class="ex-loc">德国 · 柏林</p></div>
+        </a>
+        <a aria-label="IAA MOBILITY 慕尼黑国际汽车展" class="ex-card ex-c3" href="#/services/events">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/lsbhbqv4oxSUCNsGnDlstR.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">08</span><span class="ex-mo">SEP</span></div>
+          <div class="ex-mark m">IAA MOBILITY</div>
+          <div class="ex-bot"><p class="ex-cn">慕尼黑国际汽车展</p><p class="ex-loc">德国 · 慕尼黑</p></div>
+        </a>
+        <a aria-label="GITEX GLOBAL 迪拜国际信息技术展" class="ex-card ex-c4" href="#/services/events">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/lhfldyPG1xoWqt6X3NQAeP.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">09</span><span class="ex-mo">OCT</span></div>
+          <div class="ex-mark m">GITEX GLOBAL</div>
+          <div class="ex-bot"><p class="ex-cn">迪拜国际信息技术展</p><p class="ex-loc">阿联酋 · 迪拜</p></div>
+        </a>
+        <a aria-label="CIIE 中国国际进口博览会" class="ex-card ex-c5" href="#/services/events">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/I2fk3bvcw74kD5ntDf8suR.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">10</span><span class="ex-mo">NOV</span></div>
+          <div class="ex-mark">CIIE</div>
+          <div class="ex-bot"><p class="ex-cn">中国国际进口博览会</p><p class="ex-loc">中国 · 上海</p></div>
+        </a>
+        <div aria-hidden="true" class="ex-card ex-c1 ex-ghost">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/XGWL40Xzvknk057cnVJ20E.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">01</span><span class="ex-mo">JAN</span></div>
+          <div class="ex-mark">CES</div>
+          <div class="ex-bot"><p class="ex-cn">国际消费类电子产品展览会</p><p class="ex-loc">美国 · 拉斯维加斯</p></div>
+        </div>
+        <div aria-hidden="true" class="ex-card ex-c2 ex-ghost">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/UnqSPwMrOuI4FvfGdDiTcr.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">02</span><span class="ex-mo">MAR</span></div>
+          <div class="ex-mark">MWC</div>
+          <div class="ex-bot"><p class="ex-cn">世界移动通信大会</p><p class="ex-loc">西班牙 · 巴塞罗那</p></div>
+        </div>
+        <div aria-hidden="true" class="ex-card ex-c3 ex-ghost">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/tiGfVWgQXZkG1AjbOSJ03i.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">03</span><span class="ex-mo">APR</span></div>
+          <div class="ex-mark s">HANNOVER MESSE</div>
+          <div class="ex-bot"><p class="ex-cn">汉诺威工业博览会</p><p class="ex-loc">德国 · 汉诺威</p></div>
+        </div>
+        <div aria-hidden="true" class="ex-card ex-c4 ex-ghost">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/uWmHyWj3brcQpEYhD1TtPF.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">04</span><span class="ex-mo">APR/OCT</span></div>
+          <div class="ex-mark m">CANTON FAIR</div>
+          <div class="ex-bot"><p class="ex-cn">中国进出口商品交易会（广交会）</p><p class="ex-loc">中国 · 广州</p></div>
+        </div>
+        <div aria-hidden="true" class="ex-card ex-c5 ex-ghost">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/EEvXI0DnbXpfWIdERWEN6E.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">05</span><span class="ex-mo">MAY</span></div>
+          <div class="ex-mark m">COMPUTEX</div>
+          <div class="ex-bot"><p class="ex-cn">台北国际电脑展</p><p class="ex-loc">中国台北</p></div>
+        </div>
+        <div aria-hidden="true" class="ex-card ex-c1 ex-ghost">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/NlyYsV7Rcf6hGC9gqXdzIc.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">06</span><span class="ex-mo">JUL</span></div>
+          <div class="ex-mark">WAIC</div>
+          <div class="ex-bot"><p class="ex-cn">世界人工智能大会</p><p class="ex-loc">中国 · 上海</p></div>
+        </div>
+        <div aria-hidden="true" class="ex-card ex-c2 ex-ghost">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/5YxOFVQUkOu2WpVYKiyApy.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">07</span><span class="ex-mo">SEP</span></div>
+          <div class="ex-mark">IFA</div>
+          <div class="ex-bot"><p class="ex-cn">柏林国际电子消费品展览会</p><p class="ex-loc">德国 · 柏林</p></div>
+        </div>
+        <div aria-hidden="true" class="ex-card ex-c3 ex-ghost">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/lsbhbqv4oxSUCNsGnDlstR.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">08</span><span class="ex-mo">SEP</span></div>
+          <div class="ex-mark m">IAA MOBILITY</div>
+          <div class="ex-bot"><p class="ex-cn">慕尼黑国际汽车展</p><p class="ex-loc">德国 · 慕尼黑</p></div>
+        </div>
+        <div aria-hidden="true" class="ex-card ex-c4 ex-ghost">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/lhfldyPG1xoWqt6X3NQAeP.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">09</span><span class="ex-mo">OCT</span></div>
+          <div class="ex-mark m">GITEX GLOBAL</div>
+          <div class="ex-bot"><p class="ex-cn">迪拜国际信息技术展</p><p class="ex-loc">阿联酋 · 迪拜</p></div>
+        </div>
+        <div aria-hidden="true" class="ex-card ex-c5 ex-ghost">
+          <span aria-hidden="true" class="ex-photo" style="background-image:url(images/I2fk3bvcw74kD5ntDf8suR.jpg)"></span><span aria-hidden="true" class="ex-grid"></span>
+          <div class="ex-top"><span class="ex-idx">10</span><span class="ex-mo">NOV</span></div>
+          <div class="ex-mark">CIIE</div>
+          <div class="ex-bot"><p class="ex-cn">中国国际进口博览会</p><p class="ex-loc">中国 · 上海</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 客户案例（滚动卡牌） -->
+  <div class="plat-band">
+    <div class="container plat-head">
+      <p class="eyebrow reveal"><b>05 / SELECTED CLIENTS</b></p>
+      <h2 class="slash-title sec-title reveal reveal-d1" style="margin-top:12px">客户案例</h2>
+      <p class="lead reveal reveal-d2">已陪伴自动驾驶、AIoT、电商零售、激光雷达等领域的 40 家领军企业，在资本市场与全球市场被看见。</p><div class="reveal reveal-d3" style="margin-top:26px"><a class="btn-line" href="#/cases">查看客户案例 <span class="arr"></span></a></div>
+    </div>
+    <div class="lm-wrap">
+      <div class="lm-track" id="clientTrack" style="--lm-dur:210s"></div>
+    </div>
+  </div>
+
+  <!-- 办公地点（与联系页呼应） -->
+  <div class="home-office">
+    <div class="container ho-grid">
+      <div class="ho-copy reveal">
+        <p class="eyebrow"><b>/ OFFICE</b></p>
+        <h2 class="slash-title sec-title" style="margin-top:12px">办公地点</h2>
+        <p class="ho-lead">总部位于上海陆家嘴，服务网络覆盖中国大陆、中国香港、中国澳门、中国台湾及全球主要金融中心。</p>
+        <p class="ho-meta">上海市浦东新区世纪大道8号汇丰大楼6楼</p>
+        <p class="ho-meta">周一至周五 · 09:00 – 18:00</p>
+        <a class="btn-line" href="#/contact" style="margin-top:30px">联系我们 <span class="arr"></span></a>
+      </div>
+      <div class="ho-ph reveal reveal-d1">
+        <img alt="上海陆家嘴金融城天际线" loading="lazy" src="images/loc-shanghai-lujiazui.jpg">
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <span aria-hidden="true" class="wm en">3SAMIO</span>
+    <div class="container">
+      <h2 class="reveal">让下一次重要传播，<br>从这里开始</h2>
+      <p class="reveal reveal-d1">告诉我们您的传播需求，3SAMIO 赛明欧将为您提供定制化方案与专属服务团队。</p>
+      <div class="cta-actions reveal reveal-d2">
+        <a class="btn-solid" href="#/contact" style="background:var(--amber-d); color:#FFFFFF">预约咨询</a>
+        <a class="btn-ghost" href="#/cases">查看客户案例</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 关于我们 ================= -->
+<section class="page" data-route="/about" data-title="关于我们 — 3SAMIO 赛明欧">
+  <div class="page-hero" style="--ph-img:url('images/8l7NNNhWOthN3d1OE0ZK5F.jpg')">
+    <div class="bgimg"></div><div class="shade"></div>
+    <div class="container">
+      <p class="crumb"><a href="#/">HOME</a> / ABOUT</p>
+      <h1>关于我们</h1>
+      <p class="ph-en">ABOUT 3SAMIO</p>
+    </div>
+  </div>
+  <div class="page-body">
+    <div class="container">
+      <div class="about-story">
+        <p class="eyebrow reveal"><b>THE 3SAMIO STORY</b></p>
+        <h2 class="slash-title reveal reveal-d1" style="font-size:clamp(34px,4vw,54px); margin-top:14px">我们的故事</h2>
+        <div class="prose" style="max-width:880px; margin-top:44px">
+          <p class="lead reveal">3SAMIO 赛明欧成立于 2024 年，总部位于上海。从第一天起，目标就很清晰：站在<em>创意抱负与资本市场纪律的交汇点</em>——用编辑部的严谨讲述企业故事，用顾问的视角理解资本的语言。</p>
+          <p class="reveal">资本市场的传播 DNA 贯穿我们所做的每一件事：每一次媒体沟通、每一份舆情研判、每一场国际展会传播。常有人问，为什么 3SAMIO 能持续赢得客户信任？因为在别人追逐声量的时候，我们选择向内打磨——打磨方法论，打磨团队，打磨每一条被发出的稿件。这就是 3SAMIO 不断赢的原因。</p>
+          <p class="reveal">今天，3SAMIO 的服务网络覆盖中国大陆、港澳台及全球主要金融中心，深度连接沪深港三大交易所与全球十余个顶级展会，陪伴中国企业从 IPO 前夜到世界舞台的每一步。我们的使命从未动摇：以持续精进的专业主义，让每一家值得被看见的中国企业，真正被全球财经市场听见、理解并信任。</p>
+        </div>
+        <p class="about-quote reveal reveal-d2">「让中国企业的声音，被世界听见。」</p>
+      </div>
+
+      <div style="margin-top:130px">
+        <p class="eyebrow reveal"><b>OUR COMMITMENT</b></p>
+        <h2 class="slash-title reveal reveal-d1" style="font-size:clamp(30px,3.4vw,44px); margin-top:14px">我们的承诺</h2>
+        <p class="reveal" style="margin-top:20px; max-width:720px">我们以使命、愿景与价值观定义初心，指引每一次传播中的判断与行动。</p>
+        <div class="commit-grid">
+          <div class="commit-card reveal">
+            <p class="commit-no">01 / MISSION</p>
+            <h3>使命</h3>
+            <p>为上市公司、拟上市企业与出海企业提供覆盖全周期的财经传播解决方案，在每一次关键时刻交付传播成果。</p>
+          </div>
+          <div class="commit-card reveal reveal-d1">
+            <p class="commit-no">02 / VISION</p>
+            <h3>愿景</h3>
+            <p>成为中国企业资本市场传播领域最值得信赖的伙伴，以及最懂资本语言的国际财经传播团队。</p>
+          </div>
+          <div class="commit-card reveal reveal-d2">
+            <p class="commit-no">03 / VALUES</p>
+            <h3>价值观</h3>
+            <div class="value-item"><b>专业主义</b><span>像编辑部一样严谨，像顾问一样思考。</span></div>
+            <div class="value-item"><b>长期主义</b><span>追求可持续的信任，而非一次性的声量。</span></div>
+            <div class="value-item"><b>全球视野</b><span>双语工作，让本地故事拥有全球表达。</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats" style="margin-top:110px">
+        <div class="stat reveal"><p class="stat-num"><span class="countable" data-end="5">0</span><span class="unit">大</span></p><p class="stat-label">核心服务板块<b>SERVICE LINES</b></p></div>
+        <div class="stat reveal reveal-d1"><p class="stat-num"><span class="countable" data-end="3">0</span><span class="unit">大</span></p><p class="stat-label">交易所覆盖<b>EXCHANGES</b></p></div>
+        <div class="stat reveal reveal-d2"><p class="stat-num"><span class="countable" data-end="2">0</span><span class="unit">种</span></p><p class="stat-label">工作语言<b>LANGUAGES</b></p></div>
+        <div class="stat reveal reveal-d3"><p class="stat-num"><span class="countable" data-end="24">0</span><span class="unit">/7</span></p><p class="stat-label">舆情监测<b>MONITORING</b></p></div>
+      </div>
+
+      <div class="about-cta reveal">
+        <div>
+          <h3>想了解 3SAMIO 能为您的企业做什么？</h3>
+          <p>从 IPO 传播到国际展会，一次沟通，获得专属方案。</p>
+        </div>
+        <a class="btn-solid" href="#/contact">与我们的团队聊聊 <span class="arr"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 服务总览 ================= -->
+<section class="page" data-route="/services" data-title="核心服务 — 3SAMIO 赛明欧">
+  <div class="page-hero" style="--ph-img:url('images/QZ6AQht4OekX1cYrohUqHR.jpg')">
+    <div class="bgimg"></div><div class="shade"></div>
+    <div class="container">
+      <p class="crumb"><a href="#/">HOME</a> / SERVICES</p>
+      <h1>核心服务</h1>
+      <p class="ph-en">FIVE SERVICE LINES, ONE GLOBAL VOICE</p>
+    </div>
+  </div>
+  <div class="page-body">
+    <div class="container">
+      <div class="prose" style="margin-bottom:70px">
+        <p class="lead reveal">从媒体传播到投资者关系，为资本市场沟通提供一体化解决方案。</p>
+      </div>
+      <ul class="list-block reveal" id="serviceIndex" style="max-width:900px"></ul>
+
+      <p class="eyebrow reveal" style="margin:110px 0 0"><b>OUR PROCESS</b></p>
+      <h2 class="slash-title reveal reveal-d1" style="font-size:clamp(30px,3.4vw,44px); margin-top:14px">服务流程</h2>
+      <div class="stats" style="margin-top:48px; padding-top:0; border-top:0">
+        <div class="stat reveal"><p class="stat-num en" style="color:var(--ink)">01</p><p class="stat-label" style="font-weight:700; color:var(--ink)">需求诊断</p><p style="margin-top:8px; font-size:14px; color:var(--body-l)">深入理解企业传播需求、行业环境与目标受众，明确传播目标。</p></div>
+        <div class="stat reveal reveal-d1"><p class="stat-num en" style="color:var(--ink)">02</p><p class="stat-label" style="font-weight:700; color:var(--ink)">策略制定</p><p style="margin-top:8px; font-size:14px; color:var(--body-l)">定制传播策略与执行方案，匹配媒体资源与时间节奏。</p></div>
+        <div class="stat reveal reveal-d2"><p class="stat-num en" style="color:var(--ink)">03</p><p class="stat-label" style="font-weight:700; color:var(--ink)">资源执行</p><p style="margin-top:8px; font-size:14px; color:var(--body-l)">联动国内外媒体网络，落地稿件发布、专访、活动与展会传播。</p></div>
+        <div class="stat reveal reveal-d3"><p class="stat-num en" style="color:var(--ink)">04</p><p class="stat-label" style="font-weight:700; color:var(--ink)">效果复盘</p><p style="margin-top:8px; font-size:14px; color:var(--body-l)">量化传播效果，沉淀数据洞察，持续优化下一轮传播。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 客户案例 ================= -->
+<section class="page" data-route="/cases" data-title="客户案例 — 3SAMIO 赛明欧">
+  <div class="page-hero" style="--ph-img:url('images/Ah1BB5L6D856YBU5LBmNWT.jpg')">
+    <div class="bgimg"></div><div class="shade"></div>
+    <div class="container">
+      <p class="crumb"><a href="#/">HOME</a> / CASES</p>
+      <h1>客户案例</h1>
+      <p class="ph-en">TRUSTED BY LEADING COMPANIES</p>
+    </div>
+  </div>
+  <div class="page-body">
+    <div class="container">
+      <p class="eyebrow reveal" style="margin-bottom:26px"><b>SELECTED CLIENTS</b></p>
+      <div class="cm-grid reveal reveal-d1" id="clientRows"></div>
+      <p style="margin-top:24px; font-size:13px; color:var(--muted-l)">* 点击卡片可直达客户官网，排名不分先后。</p>
+      <div class="stats" style="margin-top:90px">
+        <div class="stat reveal"><p class="stat-num"><span class="countable" data-end="5">0</span><span class="unit">大</span></p><p class="stat-label">服务板块<b>SERVICE LINES</b></p></div>
+        <div class="stat reveal reveal-d1"><p class="stat-num"><span class="countable" data-end="3">0</span><span class="unit">大</span></p><p class="stat-label">交易所覆盖<b>EXCHANGES</b></p></div>
+        <div class="stat reveal reveal-d2"><p class="stat-num"><span class="countable" data-end="40">0</span><span class="unit">+</span></p><p class="stat-label">合作客户（持续拓展）<b>CLIENTS</b></p></div>
+        <div class="stat reveal reveal-d3"><p class="stat-num"><span class="countable" data-end="100">0</span><span class="unit">%</span></p><p class="stat-label">交付响应承诺<b>RESPONSIVENESS</b></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 联系我们 ================= -->
+<section class="page" data-route="/contact" data-title="联系我们 — 3SAMIO 赛明欧">
+  <div class="page-hero" style="--ph-img:url('images/8l7NNNhWOthN3d1OE0ZK5F.jpg')">
+    <div class="bgimg"></div><div class="shade"></div>
+    <div class="container">
+      <p class="crumb"><a href="#/">HOME</a> / CONTACT</p>
+      <h1>联系我们</h1>
+      <p class="ph-en">GET IN TOUCH</p>
+    </div>
+  </div>
+  <div class="page-body">
+    <div class="container">
+
+      <!-- ===== 办公地点 / OFFICE LOCATIONS ===== -->
+      <section class="ct-sec ct-sec-first">
+        <h2 class="ct-h2 reveal">办公地点</h2>
+        <div class="loc-grid">
+          <article class="loc-card reveal">
+            <div class="loc-ph"><img alt="上海陆家嘴金融城天际线" loading="lazy" src="images/loc-shanghai-lujiazui.jpg"></div>
+            <h3>上海 · 陆家嘴</h3>
+            <p>总部 · 上海市浦东新区世纪大道8号汇丰大楼6楼</p>
+          </article>
+          <article class="loc-card reveal reveal-d1">
+            <div class="loc-ph"><img alt="中国香港中环金融区" loading="lazy" src="images/loc-hongkong-central.jpg"></div>
+            <h3>服务网络</h3>
+            <p>覆盖中国大陆、中国香港、中国澳门、中国台湾及全球主要金融中心。</p>
+          </article>
+          <article class="loc-card reveal reveal-d2">
+            <div class="loc-ph"><img alt="上海国金中心（汇丰大楼）" loading="lazy" src="images/loc-shanghai-ifc.jpg"></div>
+            <h3>到访安排</h3>
+            <p>周一至周五 09:00 – 18:00，建议提前预约，我们将安排专属顾问接待。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== 联系方式 / CONTACT ===== -->
+      <section class="ct-sec">
+        <h2 class="ct-h2 reveal">联系方式</h2>
+        <div class="ct-channels">
+          <div class="ct-ch reveal">
+            <h4>General Inquiries</h4>
+            <a href="mailto:chenhao@3samio.com">chenhao@3samio.com</a>
+          </div>
+          <div class="ct-ch reveal reveal-d1">
+            <h4>Telephone</h4>
+            <a href="tel:+8618930597794">+86 189 3059 7794</a>
+          </div>
+          <div class="ct-ch reveal reveal-d2">
+            <h4>WECHAT 企业微信</h4>
+            <a href="https://work.weixin.qq.com/ca/cawcdea0426f140e6f" rel="noopener" target="_blank">点击添加</a>
+            <img class="qr" alt="企业微信二维码，点击添加" loading="lazy" src="images/kMdHopdCX8HYqIflwaWIWj.png">
+          </div>
+          <div class="ct-ch reveal reveal-d3">
+            <h4>Office Hours</h4>
+            <p>周一至周五 · 09:00 – 18:00</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 让我们聊聊 / LET'S TALK ===== -->
+      <section class="ct-sec">
+        <h3 class="ct-h3 reveal">让我们聊聊</h3>
+        <div class="ct-channels ct-talks">
+          <div class="ct-ch reveal">
+            <h4>中国大陆</h4>
+            <a class="ct-ico-link" href="tel:+8618930597794"><svg class="ct-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/></svg>+86 189 3059 7794</a>
+          </div>
+          <div class="ct-ch reveal reveal-d1">
+            <h4>中国香港及海外</h4>
+            <a class="ct-ico-link" href="mailto:chenhao@3samio.com"><svg class="ct-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3V5zm2 2.6V17h14V7.6l-7 4.4-7-4.4zM5.9 7l6.1 3.8L18.1 7H5.9z" fill="currentColor"/></svg>chenhao@3samio.com</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= 页脚 ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="f-brand">
+        <a class="brand" href="#/">
+          <span class="logo-box" style="background:var(--paper-deep)"><span class="l3">3</span><span class="lS" style="color:var(--ink)">S</span></span>
+          <span class="brand-text"><strong style="color:#fff">3SAMIO</strong><small>赛明欧</small></span>
+        </a>
+        <p style="margin-top:18px">让中国企业的声音，被全球财经市场听见。</p>
+        <p>财经传播 · 投资者关系 · 国际展会传播</p>
+      </div>
+      <div>
+        <h4><span class="mono">/</span>服务</h4>
+        <a href="#/services/cn-media">财经媒体关系</a>
+        <a href="#/services/global-media">国际媒体关系</a>
+        <a href="#/services/reputation">舆情管理与搜索优化</a>
+        <a href="#/services/ir">投资者关系传播</a>
+        <a href="#/services/events">国际展会传播</a>
+      </div>
+      <div>
+        <h4><span class="mono">/</span>公司</h4>
+        <a href="#/about">公司简介</a>
+        <a href="#/cases">客户案例</a>
+      </div>
+      <div class="f-contact">
+        <h4><span class="mono">/</span>联系</h4>
+        <div class="fi"><b>GENERAL INQUIRIES</b><a href="mailto:chenhao@3samio.com">chenhao@3samio.com</a></div>
+        <div class="fi"><b>TELEPHONE</b><a href="tel:+8618930597794">+86 189 3059 7794</a></div>
+        <div class="fi"><b>WECHAT 企业微信</b><a href="https://work.weixin.qq.com/ca/cawcdea0426f140e6f" rel="noopener" target="_blank" style="display:flex; align-items:center; gap:12px; text-decoration:none"><img alt="企业微信二维码，点击添加" loading="lazy" src="images/kMdHopdCX8HYqIflwaWIWj.png" style="width:64px; height:64px; border-radius:8px; background:#fff; padding:4px"><span style="font-size:13px">点击直接添加 →</span></a></div>
+        <div class="fi"><b>ADDRESS</b><p style="margin:0">上海市浦东新区世纪大道8号汇丰大楼6楼</p></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024–2026 3SAMIO 赛明欧</p>
+      <p>沪ICP备XXXXXXXX号（待补充）</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav = document.getElementById('siteNav');
+  var toggle = document.getElementById('navToggle');
+
+  /* ================= 中英双语引擎 ================= */
+  var LANG = 'zh';
+  try{ LANG = localStorage.getItem('samio-lang') === 'en' ? 'en' : 'zh'; }catch(e){}
+
+  var I18N = {
+    /* ---- 导航 ---- */
+    '首页':'Home', '关于我们':'About Us', '服务':'Services', '客户案例':'Client Cases',
+    '联系我们':'Contact Us', '预约咨询':'Book a Consultation',
+    '财经媒体关系':'Financial Media Relations', '国际媒体关系':'Global Media Relations',
+    '舆情管理与搜索优化':'Reputation & Search Optimization',
+    '投资者关系传播':'Investor Relations Communications', '国际展会传播':'Global Events Communications',
+    /* ---- 首页 Hero ---- */
+    '让中国企业的声音':'Let the voices of Chinese companies',
+    '被全球资本市场听见':'be heard by global capital markets.',
+    '3SAMIO 赛明欧专注于财经传播与投资者关系服务，覆盖国内国际财经媒体关系、舆情管理与搜索优化、投资者关系传播与国际展会传播，帮助企业高效触达全球资本市场。':'3SAMIO specializes in financial communications and investor relations — spanning domestic and international financial media relations, reputation management and search optimization, IR communications, and global exhibition communications — helping enterprises reach global capital markets with efficiency.',
+    '了解核心服务':'Explore Our Services',
+    /* ---- 我们的故事 ---- */
+    '我们的':'Our', '故事':'Story', '我们的故事':'Our Story',
+    '3SAMIO 赛明欧成立于 2024 年，总部位于上海。我们以':'Founded in 2024 and headquartered in Shanghai, 3SAMIO is driven by one clear purpose — ',
+    '「让中国企业的声音被世界听见」':'“making the voices of Chinese companies heard around the world”',
+    '为使命，为上市公司、拟上市企业与出海企业提供覆盖全周期的财经传播解决方案。':' — delivering full-cycle financial communications solutions for listed companies, pre-IPO businesses and Chinese brands going global.',
+    '团队核心成员来自一线财经媒体与国际传播机构，兼具媒体资源、资本市场理解与跨文化执行能力，服务网络覆盖中国大陆、港澳台及全球主要金融中心。':'Our core team comes from leading financial media outlets and international communications agencies, combining media resources, capital-markets insight and cross-cultural execution, with a service network spanning mainland China, Hong Kong, Macao, Taiwan and the world\u2019s major financial centers.',
+    '了解更多':'Learn More',
+    /* ---- 统计 ---- */
+    '大':'\u200B', '种':'\u200B', '场':'\u200B', '个':'\u200B',
+    '核心服务板块':'Core Service Lines', '交易所覆盖（沪 · 深 · 港）':'Exchanges Covered · SH / SZ / HK',
+    '中英双语工作语言':'Working Languages · CN & EN', '全网舆情实时监测':'Real-Time Reputation Monitoring',
+    '交易所覆盖':'Exchanges Covered', '工作语言':'Working Languages', '舆情监测':'Reputation Monitoring',
+    '服务板块':'Service Lines', '合作客户（持续拓展）':'Clients (and Growing)', '交付响应承诺':'Responsiveness Commitment',
+    /* ---- 核心服务轮播（静态卡） ---- */
+    '核心服务':'Core Services', '查看全部服务':'View All Services',
+    '覆盖中国大陆及港澳台地区的中文财经媒体网络，稿件发布、深度专访与高层访谈。':'A Chinese-language financial media network across mainland China, Hong Kong, Macao and Taiwan — news distribution, in-depth interviews and executive sit-downs.',
+    '整合海外英文财经媒体资源，服务跨国传播、国际路演报道与全球品牌声量建设。':'Integrated international English-language financial media resources for cross-border communications, global roadshow coverage and worldwide brand visibility.',
+    '全网舆情实时监测与负面应对，结合搜索优化，守护企业声誉与搜索第一印象。':'Real-time, whole-web reputation monitoring and crisis response, combined with search optimization to protect corporate reputation and first impressions.',
+    '面向沪深港三大交易所的信息披露传播、业绩发布、路演支持与投资者沟通。':'Disclosure communications, earnings announcements, roadshow support and investor engagement across the Shanghai, Shenzhen and Hong Kong exchanges.',
+    '海外展会全流程传播：展前预热、现场报道到展后复盘，放大品牌国际影响力。':'End-to-end exhibition communications overseas — pre-show buildup, on-site coverage and post-show review — amplifying international brand impact.',
+    /* ---- 合作平台 ---- */
+    '合作平台':'Core Platforms',
+    '深度运营雪球、富途、东方财富三大投资者社区，守护企业在投资者聚集地的每一次被讨论。':'Deep operations across Xueqiu, Futu and Eastmoney — the three major investor communities — safeguarding every conversation about your company where investors gather.',
+    '属于投资者关系传播':'Part of Investor Relations Communications',
+    '中国最具影响力的投资者社区':'China\u2019s most influential investor community',
+    '港美股领先的互联网券商平台':'A leading online brokerage for HK & US markets',
+    '中国领先的互联网财经门户':'China\u2019s leading online finance portal',
+    /* ---- 国际展会 ---- */
+    '国际展会':'Global Exhibitions',
+    '常年驻场 CES、MWC、WAIC、IFA 等十场全球重要展会，以展前预热、现场报道到展后复盘的全流程传播，让中国企业的技术叙事在主场之外被持续听见。':'Year-round presence at ten of the world\u2019s most important trade shows — CES, MWC, WAIC, IFA and more — with full-cycle communications from pre-show buildup to on-site coverage and post-show review, keeping Chinese companies\u2019 technology stories heard beyond home turf.',
+    '国际消费类电子产品展览会':'CES — International Consumer Electronics Show',
+    '世界移动通信大会':'Mobile World Congress', '汉诺威工业博览会':'Hannover Messe',
+    '中国进出口商品交易会（广交会）':'Canton Fair — China Import & Export Fair',
+    '台北国际电脑展':'Computex Taipei', '世界人工智能大会':'World AI Conference',
+    '柏林国际电子消费品展览会':'IFA Berlin', '慕尼黑国际汽车展':'IAA Mobility Munich',
+    '迪拜国际信息技术展':'GITEX Global Dubai', '中国国际进口博览会':'China International Import Expo (CIIE)',
+    '美国 · 拉斯维加斯':'Las Vegas, USA', '西班牙 · 巴塞罗那':'Barcelona, Spain',
+    '德国 · 汉诺威':'Hannover, Germany', '中国 · 广州':'Guangzhou, China',
+    '中国台北':'Taipei, China', '中国 · 上海':'Shanghai, China',
+    '德国 · 柏林':'Berlin, Germany', '德国 · 慕尼黑':'Munich, Germany', '阿联酋 · 迪拜':'Dubai, UAE',
+    /* ---- 客户案例（首页带） ---- */
+    '已陪伴自动驾驶、AIoT、电商零售、激光雷达等领域的 40 家领军企业，在资本市场与全球市场被看见。':'Accompanying 40 leading companies across autonomous driving, AIoT, e-commerce, LiDAR and beyond — helping them get seen in capital markets and global markets alike.',
+    '查看客户案例':'View Client Cases',
+    /* ---- CTA ---- */
+    '让下一次重要传播，':'Make your next big story', '从这里开始':'start here.',
+    '告诉我们您的传播需求，3SAMIO 赛明欧将为您提供定制化方案与专属服务团队。':'Tell us about your communications needs — 3SAMIO will deliver a tailored plan and a dedicated service team.',
+    /* ---- 关于我们页 ---- */
+    '3SAMIO 赛明欧成立于 2024 年，总部位于上海。从第一天起，目标就很清晰：站在':'3SAMIO was founded in 2024 in Shanghai. From day one, the goal has been clear: to stand at ',
+    '创意抱负与资本市场纪律的交汇点':'the intersection of creative ambition and capital-markets discipline',
+    '——用编辑部的严谨讲述企业故事，用顾问的视角理解资本的语言。':' — telling corporate stories with editorial rigor and understanding the language of capital through an advisor\u2019s lens.',
+    '资本市场的传播 DNA 贯穿我们所做的每一件事：每一次媒体沟通、每一份舆情研判、每一场国际展会传播。常有人问，为什么 3SAMIO 能持续赢得客户信任？因为在别人追逐声量的时候，我们选择向内打磨——打磨方法论，打磨团队，打磨每一条被发出的稿件。这就是 3SAMIO 不断赢的原因。':'A capital-markets communications DNA runs through everything we do: every media engagement, every reputation assessment, every international exhibition campaign. People often ask why 3SAMIO keeps earning clients\u2019 trust. It\u2019s because while others chase volume, we choose to refine — our methodology, our team, and every story we put out. That is why 3SAMIO keeps winning.',
+    '今天，3SAMIO 的服务网络覆盖中国大陆、港澳台及全球主要金融中心，深度连接沪深港三大交易所与全球十余个顶级展会，陪伴中国企业从 IPO 前夜到世界舞台的每一步。我们的使命从未动摇：以持续精进的专业主义，让每一家值得被看见的中国企业，真正被全球财经市场听见、理解并信任。':'Today, 3SAMIO\u2019s network spans mainland China, Hong Kong, Macao, Taiwan and the world\u2019s major financial centers, deeply connecting the Shanghai, Shenzhen and Hong Kong exchanges and a dozen-plus top global exhibitions — accompanying Chinese companies every step from the eve of IPO to the world stage. Our mission has never wavered: with ever-refining professionalism, to make every Chinese company worth seeing truly heard, understood and trusted by global financial markets.',
+    '「让中国企业的声音，被世界听见。」':'“Let the voices of Chinese companies be heard by the world.”',
+    '我们的承诺':'Our Commitment',
+    '我们以使命、愿景与价值观定义初心，指引每一次传播中的判断与行动。':'Mission, vision and values define who we are — guiding every judgment and action in our communications work.',
+    '使命':'Mission', '愿景':'Vision', '价值观':'Values',
+    '为上市公司、拟上市企业与出海企业提供覆盖全周期的财经传播解决方案，在每一次关键时刻交付传播成果。':'Full-cycle financial communications solutions for listed, pre-IPO and going-global enterprises — delivering results at every critical moment.',
+    '成为中国企业资本市场传播领域最值得信赖的伙伴，以及最懂资本语言的国际财经传播团队。':'To become the most trusted partner in Chinese companies\u2019 capital-markets communications, and the international financial communications team that best speaks the language of capital.',
+    '专业主义':'Professionalism', '像编辑部一样严谨，像顾问一样思考。':'Editorial rigor, advisory thinking.',
+    '长期主义':'Long-Termism', '追求可持续的信任，而非一次性的声量。':'Sustainable trust over one-off buzz.',
+    '全球视野':'Global Perspective', '双语工作，让本地故事拥有全球表达。':'Bilingual by default — local stories, global expression.',
+    '想了解 3SAMIO 能为您的企业做什么？':'Curious what 3SAMIO can do for your company?',
+    '从 IPO 传播到国际展会，一次沟通，获得专属方案。':'From IPO communications to global exhibitions — one conversation gets you a tailored plan.',
+    '与我们的团队聊聊':'Talk to Our Team',
+    /* ---- 服务总览页 ---- */
+    '从媒体传播到投资者关系，为资本市场沟通提供一体化解决方案。':'From media communications to investor relations — integrated solutions for capital-markets engagement.',
+    '服务流程':'How We Work',
+    '需求诊断':'Discovery', '深入理解企业传播需求、行业环境与目标受众，明确传播目标。':'A deep dive into your communications needs, industry context and audiences to define clear objectives.',
+    '策略制定':'Strategy', '定制传播策略与执行方案，匹配媒体资源与时间节奏。':'Tailored communications strategy and execution plans, matched with media resources and timing.',
+    '资源执行':'Execution', '联动国内外媒体网络，落地稿件发布、专访、活动与展会传播。':'Activating domestic and international media networks to deliver coverage, interviews, events and exhibitions.',
+    '效果复盘':'Review', '量化传播效果，沉淀数据洞察，持续优化下一轮传播。':'Quantifying results, distilling insights and continuously optimizing the next campaign.',
+    /* ---- 客户案例页 ---- */
+    '* 点击卡片可直达客户官网，排名不分先后。':'* Click any card to visit the client\u2019s official website, in no particular order.',
+    /* ---- 联系我们页 ---- */
+    '告诉我们您的传播需求，我们将为您提供定制化方案与专属服务团队。':'Tell us about your communications needs — we\u2019ll deliver a tailored plan and a dedicated team.',
+    'WECHAT 企业微信':'WeChat',
+    '点击或扫码添加企业微信':'Click or scan to add us on WeChat',
+    '需求沟通 · 方案对接，更直接':'The most direct way to discuss needs and align on proposals',
+    '上海市浦东新区世纪大道8号汇丰大楼6楼':'6F, HSBC Building, 8 Century Avenue, Pudong New Area, Shanghai',
+    '添加企业微信':'Add Us on WeChat', '发送邮件':'Email Us', '直接致电':'Call Us',
+    /* ---- 联系我们页（新版：办公地点 / 联系方式 / Let's talk） ---- */
+    '办公地点':'Office Locations',
+    '上海 · 陆家嘴':'Shanghai · Lujiazui',
+    '总部 · 上海市浦东新区世纪大道8号汇丰大楼6楼':'Headquarters · 6F, HSBC Building, 8 Century Avenue, Pudong, Shanghai',
+    '服务网络':'Service Network',
+    '覆盖中国大陆、中国香港、中国澳门、中国台湾及全球主要金融中心。':'Serving mainland China, Hong Kong (China), Macao (China), Taiwan (China) and the world\u2019s major financial centres.',
+    '到访安排':'Visits & Appointments',
+    '周一至周五 09:00 – 18:00，建议提前预约，我们将安排专属顾问接待。':'Mon\u2013Fri, 09:00 \u2013 18:00. Advance booking recommended \u2014 a dedicated advisor will receive you.',
+    '联系方式':'Contact',
+    '点击添加':'Click to add',
+    '周一至周五 · 09:00 – 18:00':'Mon\u2013Fri · 09:00 \u2013 18:00',
+    '让我们聊聊':'Let\u2019s Talk',
+    '中国大陆':'China Mainland',
+    '中国香港及海外':'Hong Kong, China & Overseas',
+    '上海陆家嘴金融城天际线':'Lujiazui financial district skyline, Shanghai',
+    '中国香港中环金融区':'Central financial district, Hong Kong, China',
+    '上海国金中心（汇丰大楼）':'Shanghai IFC (HSBC Building)',
+    '上海陆家嘴金融城':'Lujiazui financial district, Shanghai',
+    '总部位于上海陆家嘴，服务网络覆盖中国大陆、中国香港、中国澳门、中国台湾及全球主要金融中心。':'Headquartered in Lujiazui, Shanghai, with a service network spanning mainland China, Hong Kong (China), Macao (China), Taiwan (China) and the world\u2019s major financial centres.',
+    /* ---- 页脚 ---- */
+    '让中国企业的声音，被全球财经市场听见。':'Making the voices of Chinese companies heard by global financial markets.',
+    '财经传播 · 投资者关系 · 国际展会传播':'Financial Communications · Investor Relations · Global Events',
+    '公司':'Company', '联系':'Contact', '公司简介':'About the Company',
+    '点击直接添加 →':'Click to add →',
+    '© 2024–2026 3SAMIO 赛明欧':'© 2024–2026 3SAMIO',
+    '沪ICP备XXXXXXXX号（待补充）':'沪ICP备XXXXXXXX号 (to be added)',
+    /* ---- 页面标题（data-title） ---- */
+    '3SAMIO 赛明欧 — 财经传播与投资者关系':'3SAMIO — Financial Communications & Investor Relations',
+    '关于我们 — 3SAMIO 赛明欧':'About Us — 3SAMIO',
+    '核心服务 — 3SAMIO 赛明欧':'Core Services — 3SAMIO',
+    '客户案例 — 3SAMIO 赛明欧':'Client Cases — 3SAMIO',
+    '联系我们 — 3SAMIO 赛明欧':'Contact Us — 3SAMIO',
+    '财经媒体关系 — 3SAMIO 赛明欧':'Financial Media Relations — 3SAMIO',
+    '国际媒体关系 — 3SAMIO 赛明欧':'Global Media Relations — 3SAMIO',
+    '舆情管理与搜索优化 — 3SAMIO 赛明欧':'Reputation & Search Optimization — 3SAMIO',
+    '投资者关系传播 — 3SAMIO 赛明欧':'Investor Relations Communications — 3SAMIO',
+    '国际展会传播 — 3SAMIO 赛明欧':'Global Events Communications — 3SAMIO',
+    /* ---- aria-label / alt ---- */
+    '打开菜单':'Open Menu', '主导航':'Main Navigation', '移动端导航':'Mobile Navigation',
+    '上一组':'Previous', '下一组':'Next', '全球资本流动视觉':'Visual of global capital flows',
+    '3SAMIO 赛明欧 首页':'3SAMIO Home', '国际展会现场':'At an international exhibition',
+    '企业微信二维码，点击添加':'WeChat QR code — click to add',
+    '3SAMIO 赛明欧 企业微信二维码，点击添加':'3SAMIO WeChat QR code — click to add',
+    'CES 国际消费类电子产品展览会':'CES — International Consumer Electronics Show',
+    'MWC 世界移动通信大会':'MWC — Mobile World Congress',
+    'HANNOVER MESSE 汉诺威工业博览会':'Hannover Messe — Industrial Fair',
+    'CANTON FAIR 中国进出口商品交易会（广交会）':'Canton Fair — China Import & Export Fair',
+    'COMPUTEX 台北国际电脑展':'Computex Taipei',
+    'WAIC 世界人工智能大会':'WAIC — World AI Conference',
+    'IFA 柏林国际电子消费品展览会':'IFA Berlin — Consumer Electronics Show',
+    'IAA MOBILITY 慕尼黑国际汽车展':'IAA Mobility Munich',
+    'GITEX GLOBAL 迪拜国际信息技术展':'GITEX Global Dubai',
+    'CIIE 中国国际进口博览会':'CIIE — China International Import Expo',
+    /* ---- 服务子页（动态生成） ---- */
+    '01 财经媒体关系':'01 Financial Media Relations', '02 国际媒体关系':'02 Global Media Relations',
+    '03 舆情管理与搜索优化':'03 Reputation & Search Optimization', '04 投资者关系传播':'04 Investor Relations Communications',
+    '05 国际展会传播':'05 Global Events Communications',
+    '如需了解本服务的详细方案与案例，欢迎':'For a detailed proposal and case examples of this service, ',
+    '。':'.',
+    '覆盖中国大陆及港澳台地区的中文财经媒体网络，提供稿件发布、深度专访与高层访谈的全方位传播服务。':'A Chinese-language financial media network across mainland China, Hong Kong, Macao and Taiwan, providing end-to-end news distribution, in-depth interviews and executive conversations.',
+    '整合海外英文财经媒体资源，服务企业跨国传播、国际路演报道与全球品牌声量建设。':'Integrated international English-language financial media resources for cross-border communications, global roadshow coverage and worldwide brand visibility.',
+    '全网舆情实时监测与负面信息应对，结合搜索引擎优化，守护企业声誉与搜索第一印象。':'Whole-web, real-time reputation monitoring and response, combined with SEO, to protect reputation and search first impressions.',
+    '面向沪、深、港三大交易所，提供信息披露传播、业绩发布、路演支持与投资者沟通的定制化服务。':'Tailored disclosure communications, earnings announcements, roadshow support and investor engagement across the SH, SZ and HK exchanges.',
+    '策划海外展会全流程传播，从展前预热、现场报道到展后复盘，联动国际媒体资源，放大品牌国际影响力。':'End-to-end overseas exhibition communications — pre-show buildup, on-site coverage and post-show review — amplified through international media resources.',
+    /* 服务01 交付物 */
+    '财经媒体稿件策划与发布':'Financial Story Planning & Distribution', '围绕企业关键节点，产出符合财经语境的新闻稿与深度稿件，并精准投放。':'Newsworthy, finance-native releases and features around key corporate milestones, precisely placed.',
+    '主流财经媒体深度专访':'In-Depth Interviews with Top Outlets', '为管理层匹配权威财经媒体专访机会，塑造专业、可信的企业叙事。':'Matching management with authoritative outlets to build a credible corporate narrative.',
+    '高管访谈与专栏合作':'Executive Interviews & Columns', '建立高管在核心财经媒体的长期发声阵地。':'A long-term executive voice across core financial media.',
+    '发布会媒体邀约与现场管理':'Press Events & Media Management', '从媒体邀约、议程设计到现场执行的全流程管理。':'Full-cycle management from invitations and agendas to on-site execution.',
+    '传播效果监测与剪报服务':'Coverage Monitoring & Clipping', '量化每一次传播的声量与质量，沉淀传播资产。':'Quantifying the reach and quality of every campaign, building lasting communications assets.',
+    /* 服务02 交付物 */
+    '英文新闻稿撰写与全球分发':'English Releases & Global Distribution', '中英双语内容团队，确保信息在国际语境中同样精准有力。':'A bilingual content team ensuring messages land with precision in international contexts.',
+    '国际财经媒体关系维护':'International Media Relations', '覆盖全球主要金融中心的英文财经媒体网络。':'An English-language financial media network across the world\u2019s major financial centers.',
+    '海外路演与国际资本市场传播':'Roadshows & International Capital Markets', '为路演、上市与国际并购提供全周期传播支持。':'Full-cycle communications support for roadshows, listings and cross-border M&A.',
+    '跨国危机传播协调':'Cross-Border Crisis Communications', '跨时区、跨语境的快速响应与口径管理。':'Rapid, coordinated response and message discipline across time zones and languages.',
+    '国际奖项与榜单申报':'Awards & Rankings Submissions', '提升企业在国际专业评价体系中的能见度。':'Raising visibility within international professional evaluation systems.',
+    /* 服务03 交付物 */
+    '7×24 全网舆情监测与预警':'24/7 Whole-Web Monitoring & Alerts', '覆盖新闻、社交、股吧等关键场域，异常信息分钟级触达。':'Across news, social and stock forums — anomalies flagged within minutes.',
+    '负面信息研判与应对策略':'Risk Assessment & Response Strategy', '分级研判、快速响应，把风险控制在发酵之前。':'Tiered assessment and rapid response, containing risks before they escalate.',
+    '搜索引擎内容优化':'Search Engine Optimization', '让投资者与公众搜索企业时，看到的第一页始终准确、权威。':'Keeping the first page of search results accurate and authoritative.',
+    '声誉资产管理与修复':'Reputation Asset Management & Repair', '系统性建设企业的数字声誉资产，长期保值。':'Systematically building digital reputation assets that hold long-term value.',
+    '定期舆情分析报告':'Regular Reputation Analysis', '以数据视角复盘声誉趋势，辅助管理层决策。':'Data-driven reviews of reputation trends to support executive decisions.',
+    /* 服务04 交付物 */
+    '定期报告与公告传播策划':'Periodic Reports & Announcements', '让合规披露同时成为一次有效的价值传播。':'Turning mandatory disclosure into effective value communication.',
+    '业绩发布会与全球电话会议支持':'Earnings Events & Conference Calls', '从内容准备到多市场同步执行的完整支持。':'Complete support from content preparation to synchronized multi-market execution.',
+    '分析师与投资者沟通活动':'Analyst & Investor Engagement', '高效连接卖方研究、机构投资者与管理层。':'Efficiently connecting sell-side research, institutional investors and management.',
+    '股东结构与市场预期管理':'Shareholder & Expectations Management', '帮助资本市场建立对企业价值的清晰认知。':'Helping the market form a clear view of enterprise value.',
+    'ESG 与长期价值传播':'ESG & Long-Term Value', '面向全球投资者的可持续叙事。':'Sustainability narratives for global investors.',
+    /* 服务05 交付物 */
+    '展前媒体预热与内容策划':'Pre-Show Media Buildup', '让企业成为展会叙事的主角之一。':'Making your company a protagonist of the show\u2019s storyline.',
+    '现场新闻中心与媒体接待':'On-Site Press Office & Hosting', '展会现场的高效媒体运营与内容分发。':'Efficient media operations and content distribution on site.',
+    '高管演讲与论坛编排':'Executive Speaking & Forum Curation', '把企业观点放进国际舞台的核心议程。':'Placing executive viewpoints on the main agenda of global stages.',
+    '国际媒体专访安排':'International Media Interviews', '借助展会窗口集中产出国际报道。':'Concentrated international coverage during the exhibition window.',
+    '展后传播复盘与素材库':'Post-Show Review & Asset Library', '每一次参展都沉淀为可复用的全球传播资产。':'Every show distilled into reusable global communications assets.',
+    /* ---- 投资者关系富内容 ---- */
+    '投资者社区合作平台':'Investor Community Platforms',
+    '投资者关系不只在定期报告里，也在投资者每天打开的那个社区。我们长期运营雪球、富途、东方财富三大阵地，在企业与投资者之间建立稳定、日常的沟通界面。':'Investor relations lives not only in periodic reports, but in the communities investors open every day. We run long-term operations on Xueqiu, Futu and Eastmoney, building a stable, everyday interface between companies and investors.',
+    '覆盖':'Reach', '形态':'Formats',
+    '中国最具影响力的投资者社区，聚集大量持续跟踪 A 股、港股、美股的活跃个人投资者与专业投资人。':'China\u2019s most influential investor community, home to active retail and professional investors tracking A-shares, HK and US stocks.',
+    'A 股 / 港股 / 美股活跃投资者与专业投资人':'Active retail & professional investors across A/HK/US',
+    '长文深度帖、组合讨论、财报解读、直播路演':'Long-form posts, portfolio discussions, earnings deep-dives, livestream roadshows',
+    '企业号运营、深度内容策划、投资者问答引导、口碑守护':'Corporate account ops, content planning, Q&A guidance, reputation care',
+    '港美股领先的互联网券商平台，牛牛社区聚集跨境配置需求旺盛的高净值与年轻投资者。':'A leading online brokerage for HK & US markets; its Niuniu community gathers high-net-worth and younger investors with strong cross-border allocation needs.',
+    '富途牛牛社区、港美股高净值与年轻投资者':'Futu Niuniu community; HNW & younger HK/US investors',
+    '牛牛圈话题、直播、财报日历、行情讨论':'Niuniu topics, livestreams, earnings calendar, market talk',
+    '社区话题运营、财报节点内容、直播与路演联动':'Community topic ops, earnings-cycle content, livestream & roadshow tie-ins',
+    '中国领先的互联网财经门户，股吧与资讯端构成投资者获取企业信息的日常入口。':'China\u2019s leading online finance portal; its Guba forums and news feed are investors\u2019 daily gateway to company information.',
+    '股吧与资讯端千万级日活投资者':'Tens of millions of daily active investors on Guba & news',
+    '股吧讨论、财经资讯、公告与研报联动':'Guba discussions, financial news, filings & research tie-ins',
+    '股吧舆情监测、资讯内容分发、负面信息快速响应':'Guba sentiment monitoring, news distribution, rapid negative response',
+    '上述平台名称与商标归各自权利人所有，3SAMIO 赛明欧与其为独立合作关系。':'Platform names and trademarks belong to their respective owners; 3SAMIO maintains independent partnerships with each.',
+    '沪 · 深 · 港 三大交易所':'SH · SZ · HK Exchanges',
+    '三大交易所的披露规则与投资者结构各不相同，我们据此配置差异化的传播重点与沟通节奏。':'Each exchange has distinct disclosure rules and investor bases — we configure differentiated messaging priorities and engagement cadence accordingly.',
+    '上海证券交易所':'Shanghai Stock Exchange', '深圳证券交易所':'Shenzhen Stock Exchange', '香港交易所':'Hong Kong Exchanges (HKEX)',
+    '面向沪市主板与科创板公司，支持定期报告传播、业绩说明会与投资者日常沟通。':'For SSE Main Board and STAR Market companies — periodic report communications, earnings briefings and ongoing investor engagement.',
+    '面向深市主板与创业板公司，围绕成长叙事与产业逻辑展开资本市场沟通。':'For SZSE Main Board and ChiNext companies — capital-markets engagement built around growth narratives and industry logic.',
+    '面向港股上市公司，提供中英双语披露传播与国际投资者关系服务。':'For HK-listed companies — bilingual disclosure communications and international IR services.',
+    '年度投资者沟通节奏':'Annual IR Rhythm',
+    '投资者关系是一条全年不断线的沟通曲线。我们把披露节点与日常沟通排进同一张日历，让企业始终在资本市场的视野里。':'IR is a year-round engagement curve. We schedule disclosure milestones and daily communications on one calendar, keeping companies permanently on the market\u2019s radar.',
+    '3–4 月':'Mar–Apr', '4 / 10 月':'Apr / Oct', '5–6 月':'May–Jun', '8 月':'Aug', '全年':'Year-Round',
+    '年度业绩发布':'Annual Results', '年报传播、业绩说明会与分析师电话会，让合规披露同时成为一次价值沟通。':'Annual report communications, results briefings and analyst calls — compliance disclosure that doubles as value communication.',
+    '季度报告':'Quarterly Reports', '季报要点提炼与市场预期管理，帮助资本市场读懂企业的经营节奏。':'Key-message distillation and expectation management that help the market read your operating rhythm.',
+    '股东大会':'AGM', '议案沟通、股东关系维护与现场传播支持，稳固长期股东基础。':'Resolution communications, shareholder relations and on-site support to solidify the long-term shareholder base.',
+    '中期业绩':'Interim Results', '中报传播与投资者沟通会，承接全年的价值叙事主线。':'Interim report communications and investor meetings carrying the year\u2019s value narrative.',
+    '常态化沟通':'Ongoing Engagement', '舆情监测、路演支持、ESG 与长期价值传播，持续校准投资者预期。':'Reputation monitoring, roadshow support, ESG and long-term value storytelling — continuously calibrating investor expectations.',
+    '投资者社区平台':'Investor Communities', '中英双语披露传播':'Bilingual Disclosure', '披露节点覆盖':'Disclosure Coverage',
+    /* ---- 国际展会富内容 ---- */
+    '国际展会一览':'Global Exhibitions at a Glance',
+    '从拉斯维加斯到迪拜，从汉诺威到上海，我们常年驻场十场全球重要展会，让中国企业的技术叙事在主场之外被持续听见。':'From Las Vegas to Dubai, Hannover to Shanghai — a year-round presence at ten major global exhibitions keeps Chinese companies\u2019 technology stories heard beyond home turf.',
+    '1 月':'Jan', '3 月':'Mar', '4 月':'Apr', '4 & 10 月':'Apr & Oct', '5 月':'May', '7 月':'Jul', '9 月':'Sep', '10 月':'Oct', '11 月':'Nov',
+    '消费电子 · 智能硬件':'Consumer Electronics · Smart Hardware', '通信 · 移动互联':'Telecom · Mobile Internet',
+    '工业制造 · 自动化':'Industrial Manufacturing · Automation', '外贸 · 综合商品':'Trade · General Merchandise',
+    '半导体 · 算力生态':'Semiconductors · Compute', '人工智能':'Artificial Intelligence',
+    '消费电子 · 家电':'Consumer Electronics · Home Appliances', '汽车 · 智能出行':'Automotive · Smart Mobility',
+    '信息技术 · 云与 AI':'IT · Cloud & AI', '进口贸易 · 综合':'Import Trade · General',
+    '新品首发与国际科技媒体集中报道':'Product launches and concentrated global tech media coverage',
+    '运营商与产业链全球议题设置':'Global agenda-setting with carriers and the supply chain',
+    '工业 4.0 与中国智造叙事':'Industry 4.0 and \u201cMade in China\u201d narratives',
+    '海外采购商沟通与订单转化':'Overseas buyer engagement and order conversion',
+    '供应链与算力生态传播':'Supply-chain and compute-ecosystem communications',
+    '大模型与 AI 应用的主场发声':'Home-turf voice for foundation models and AI applications',
+    '欧洲市场新品叙事与渠道沟通':'European launch narratives and channel engagement',
+    '智能电动车与出行生态议题':'Smart EV and mobility-ecosystem agendas',
+    '中东市场拓展与政企关系':'Middle East expansion and government & enterprise relations',
+    '跨国品牌的中国市场故事':'Global brands\u2019 China-market stories',
+    '年度展会日历':'Annual Exhibition Calendar',
+    '按时间排列的十场核心展会。从品类、城市到传播重点，一张表看清全年的国际传播窗口。':'Ten core exhibitions in chronological order — sectors, cities and communications priorities at a glance for the year\u2019s global windows.',
+    '展会':'Exhibition', '时间':'When', '城市':'City', '行业领域':'Sector', '传播重点':'Focus',
+    '展会传播全流程':'Exhibition Communications, End to End',
+    '一次参展的传播价值，取决于展前是否有人听、现场是否被记录、展后是否被复述。':'A show\u2019s communications value depends on whether anyone is listening before, recording during, and retelling after.',
+    '展前 8–12 周':'8–12 Weeks Before', '传播策略与议题设定':'Strategy & agenda setting',
+    '国际媒体名单与邀约':'International media list & invitations', '预告内容矩阵搭建':'Preview content matrix',
+    '展前 2 周':'2 Weeks Before', '新闻稿与高层口径定稿':'Release & executive messaging finalization',
+    '国际媒体预沟通':'Pre-show media briefings', '现场物料与话术准备':'On-site materials & talking points',
+    '展会现场':'On Site', '实时内容分发与传播':'Real-time content distribution',
+    '展后 1–4 周':'1–4 Weeks After', '国际报道汇总与效果评估':'International coverage roundup & evaluation',
+    '传播复盘报告':'Post-campaign review report', '素材库沉淀与二次传播':'Asset library & secondary distribution',
+    '常年驻场核心展会':'Year-Round Core Exhibitions', '覆盖洲际市场':'Continental Markets',
+    '国家与地区':'Countries & Regions', '中英双语现场支持':'On-Site Languages',
+    /* ---- 客户卡牌（动态，40 家） ---- */
+    '希迪智驾 CiDi':'CiDi', '涂鸦智能 Tuya':'Tuya', '宝尊 BAOZUN':'Baozun',
+    '驭势科技 UISEE':'UISEE', '九阳豆业':'Joyoung Soybean', '九阳豆浆':'Joyoung Soymilk',
+    '智慧树 Treenity':'Treenity', '灿谷 CANGO':'Cango', '禾赛 HESAI':'Hesai',
+    '首程控股':'Shoucheng Holdings', '曹操出行':'Caocao Mobility',
+    '阿里巴巴':'Alibaba', '京东集团':'JD.com', '百度集团':'Baidu', '奇瑞汽车':'Chery Automobile',
+    '同程旅行':'Tongcheng Travel', '百胜中国':'Yum China', '华住集团':'H World Group',
+    '顺丰同城':'SF Intra-city', '达势股份':'DPC Dash', '锅圈 Guoquan':'Guoquan Food',
+    '联易融':'Linklogis', '地平线机器人':'Horizon Robotics', '速腾聚创':'RoboSense',
+    '英诺赛科':'Innoscience', '云知声':'Unisound', '移卡':'Yeahka',
+    '金融壹账通':'OneConnect', '云顶新耀':'Everest Medicines', '万物新生':'ATRenew',
+    '霸王茶姬':'Chagee', '亿咖通':'ECARX', '能链智电':'NaaS Energy', '雅乐集团':'Yalla Group',
+    '光峰科技':'Appotronics', '华勤技术':'Huaqin', '江波龙':'Longsys',
+    '海天味业':'Haitian Flavouring', '赛力斯':'Seres', '同仁堂':'Tong Ren Tang',
+    '港交所上市的商用车自动驾驶领军企业':'HK-listed leader in commercial-vehicle autonomous driving',
+    '港交所上市的全球AIoT云平台':'HK-listed global AIoT cloud platform',
+    '港交所上市的城市停车资产运营龙头':'HK-listed leader in urban parking asset operation',
+    '港交所上市的品牌电商服务龙头':'HK-listed leader in brand e-commerce services',
+    '纽交所上市的汽车交易服务平台':'NYSE-listed auto trading services platform',
+    '港交所上市的激光雷达全球龙头':'HK-listed global leader in LiDAR',
+    '港交所上市的新能源出行平台':'HK-listed new-energy mobility platform',
+    '港交所上市的电商与云计算巨头':'HK-listed e-commerce & cloud computing giant',
+    '港交所上市的综合电商与供应链龙头':'HK-listed e-commerce & supply-chain giant',
+    '港交所上市的AI与搜索巨头':'HK-listed AI & search giant',
+    '港交所上市的中国车企出口龙头':'HK-listed leading Chinese auto exporter',
+    '港交所上市的在线旅游龙头':'HK-listed online travel leader',
+    '港交所上市的连锁餐饮巨头':'HK-listed restaurant chain giant',
+    '港交所上市的全球酒店集团':'HK-listed global hotel group',
+    '港交所上市的即时配送平台':'HK-listed on-demand delivery platform',
+    '港交所上市的连锁披萨龙头':'HK-listed pizza chain leader',
+    '港交所上市的火锅食材连锁龙头':'HK-listed hotpot ingredients chain leader',
+    '港交所上市的供应链金融科技龙头':'HK-listed supply-chain fintech leader',
+    '港交所上市的智驾计算方案龙头':'HK-listed leader in autonomous-driving computing',
+    '港交所上市的车载激光雷达龙头':'HK-listed automotive LiDAR leader',
+    '港交所上市的氮化镓功率芯片龙头':'HK-listed GaN power chip leader',
+    '港交所上市的AI语音技术龙头':'HK-listed AI voice technology leader',
+    '港交所上市的支付科技服务商':'HK-listed payment technology provider',
+    '港交所上市的金融科技服务商':'HK-listed fintech solutions provider',
+    '港交所上市的创新药企':'HK-listed innovative biopharma',
+    '纽交所上市的二手3C交易龙头':'NYSE-listed leader in pre-owned electronics trading',
+    '纳斯达克上市的新中式茶饮品牌':'NASDAQ-listed new-style tea brand',
+    '纳斯达克上市的汽车智能化科技公司':'NASDAQ-listed automotive intelligence company',
+    '纳斯达克上市的充电服务龙头':'NASDAQ-listed EV charging services leader',
+    '纽交所上市的中东社交娱乐龙头':'NYSE-listed MENA social & entertainment leader',
+    '科创板上市的激光显示龙头':'STAR Market-listed laser display leader',
+    '上交所上市的智能硬件ODM龙头':'SSE-listed intelligent hardware ODM leader',
+    '创业板上市的存储模组龙头':'ChiNext-listed storage module leader',
+    '上交所上市的调味品巨头':'SSE-listed condiment giant',
+    '上交所上市的新能源车企':'SSE-listed new-energy automaker',
+    '上交所上市的百年中医药品牌':'SSE-listed century-old TCM brand',
+    '商用豆浆产业链头部品牌':'Top commercial soymilk supply-chain brand',
+    '国民级健康豆浆饮品品牌':'National healthy soymilk beverage brand',
+    '中国领先的幼教数字平台':'China\u2019s leading early-education digital platform',
+    '无人驾驶商业化落地先行者':'Pioneer in commercializing autonomous driving'
+  };
+
+  var I18N_R = (function(){
+    var r = {};
+    for (var k in I18N){
+      if (Object.prototype.hasOwnProperty.call(I18N, k) && k) r[I18N[k]] = k;
+    }
+    return r;
+  })();
+  var I18N_SKIP = {SCRIPT:1, STYLE:1, TEXTAREA:1, NOSCRIPT:1};
+
+  function applyI18n(){
+    var map = LANG === 'en' ? I18N : I18N_R;
+    var has = Object.prototype.hasOwnProperty;
+    /* 先恢复被清空的计量单位（大/种/场/个 → 零宽占位） */
+    document.querySelectorAll('[data-unit-orig]').forEach(function(el){
+      var kids = el.childNodes;
+      for (var i = 0; i < kids.length; i++){
+        if (kids[i].nodeType === 3){ kids[i].nodeValue = el.getAttribute('data-unit-orig'); break; }
+      }
+    });
+    function tr(s){
+      var key = s.replace(/\s+/g, ' ').trim();
+      return has.call(map, key) ? map[key] : null;
+    }
+    /* 文本节点 */
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+    var n, batch = [];
+    while ((n = w.nextNode())){
+      if (!n.nodeValue || !n.nodeValue.trim()) continue;
+      if (n.parentNode && I18N_SKIP[n.parentNode.nodeName]) continue;
+      var v = tr(n.nodeValue);
+      if (v !== null){
+        if (v === '\u200B' && n.parentNode && !n.parentNode.getAttribute('data-unit-orig')){
+          n.parentNode.setAttribute('data-unit-orig', n.nodeValue.replace(/\s+/g,' ').trim());
+        }
+        batch.push([n, v]);
+      }
+    }
+    batch.forEach(function(p){
+      var orig = p[0].nodeValue;
+      var lead = /^\s/.test(orig) ? ' ' : '', tail = /\s$/.test(orig) ? ' ' : '';
+      p[0].nodeValue = lead + p[1] + tail;
+    });
+    /* 属性（aria-label / alt / data-title） */
+    document.querySelectorAll('[aria-label],[alt],[data-title]').forEach(function(el){
+      ['aria-label', 'alt', 'data-title'].forEach(function(a){
+        if (!el.hasAttribute(a)) return;
+        var k = el.getAttribute(a).trim();
+        if (has.call(map, k)) el.setAttribute(a, map[k]);
+      });
+    });
+    document.documentElement.setAttribute('lang', LANG === 'en' ? 'en' : 'zh-CN');
+  }
+
+  /* ---------- 吸顶导航：滚动后切换为纸白毛玻璃 ---------- */
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 24); }
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  /* ---------- 移动端菜单 ---------- */
+  toggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  document.querySelectorAll('.mobile-menu a').forEach(function(a){
+    a.addEventListener('click', function(){
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+    });
+  });
+
+  /* ---------- 服务数据（驱动总览列表与子页） ---------- */
+  var SERVICES = [
+    {slug:'cn-media', no:'01', name:'财经媒体关系', en:'CN FINANCIAL MEDIA RELATIONS',
+     desc:'覆盖中国大陆及港澳台地区的中文财经媒体网络，提供稿件发布、深度专访与高层访谈的全方位传播服务。',
+     delivers:[
+       ['财经媒体稿件策划与发布','围绕企业关键节点，产出符合财经语境的新闻稿与深度稿件，并精准投放。'],
+       ['主流财经媒体深度专访','为管理层匹配权威财经媒体专访机会，塑造专业、可信的企业叙事。'],
+       ['高管访谈与专栏合作','建立高管在核心财经媒体的长期发声阵地。'],
+       ['发布会媒体邀约与现场管理','从媒体邀约、议程设计到现场执行的全流程管理。'],
+       ['传播效果监测与剪报服务','量化每一次传播的声量与质量，沉淀传播资产。']
+     ]},
+    {slug:'global-media', no:'02', name:'国际媒体关系', en:'GLOBAL MEDIA RELATIONS',
+     desc:'整合海外英文财经媒体资源，服务企业跨国传播、国际路演报道与全球品牌声量建设。',
+     delivers:[
+       ['英文新闻稿撰写与全球分发','中英双语内容团队，确保信息在国际语境中同样精准有力。'],
+       ['国际财经媒体关系维护','覆盖全球主要金融中心的英文财经媒体网络。'],
+       ['海外路演与国际资本市场传播','为路演、上市与国际并购提供全周期传播支持。'],
+       ['跨国危机传播协调','跨时区、跨语境的快速响应与口径管理。'],
+       ['国际奖项与榜单申报','提升企业在国际专业评价体系中的能见度。']
+     ]},
+    {slug:'reputation', no:'03', name:'舆情管理与搜索优化', en:'REPUTATION & SEARCH OPTIMIZATION',
+     desc:'全网舆情实时监测与负面信息应对，结合搜索引擎优化，守护企业声誉与搜索第一印象。',
+     delivers:[
+       ['7×24 全网舆情监测与预警','覆盖新闻、社交、股吧等关键场域，异常信息分钟级触达。'],
+       ['负面信息研判与应对策略','分级研判、快速响应，把风险控制在发酵之前。'],
+       ['搜索引擎内容优化','让投资者与公众搜索企业时，看到的第一页始终准确、权威。'],
+       ['声誉资产管理与修复','系统性建设企业的数字声誉资产，长期保值。'],
+       ['定期舆情分析报告','以数据视角复盘声誉趋势，辅助管理层决策。']
+     ]},
+    {slug:'ir', no:'04', name:'投资者关系传播', en:'INVESTOR RELATIONS COMMUNICATIONS',
+     desc:'面向沪、深、港三大交易所，提供信息披露传播、业绩发布、路演支持与投资者沟通的定制化服务。',
+     delivers:[
+       ['定期报告与公告传播策划','让合规披露同时成为一次有效的价值传播。'],
+       ['业绩发布会与全球电话会议支持','从内容准备到多市场同步执行的完整支持。'],
+       ['分析师与投资者沟通活动','高效连接卖方研究、机构投资者与管理层。'],
+       ['股东结构与市场预期管理','帮助资本市场建立对企业价值的清晰认知。'],
+       ['ESG 与长期价值传播','面向全球投资者的可持续叙事。']
+     ]},
+    {slug:'events', no:'05', name:'国际展会传播', en:'GLOBAL EVENTS COMMUNICATIONS',
+     desc:'策划海外展会全流程传播，从展前预热、现场报道到展后复盘，联动国际媒体资源，放大品牌国际影响力。',
+     delivers:[
+       ['展前媒体预热与内容策划','让企业成为展会叙事的主角之一。'],
+       ['现场新闻中心与媒体接待','展会现场的高效媒体运营与内容分发。'],
+       ['高管演讲与论坛编排','把企业观点放进国际舞台的核心议程。'],
+       ['国际媒体专访安排','借助展会窗口集中产出国际报道。'],
+       ['展后传播复盘与素材库','每一次参展都沉淀为可复用的全球传播资产。']
+     ]}
+  ];
+
+  /* ---------- 服务总览列表 ---------- */
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function fillServiceIndex(){
+    var idx = document.getElementById('serviceIndex');
+    if (idx) {
+      idx.innerHTML = SERVICES.map(function(s){
+        return '<li><span class="li-no">'+escapeHtml(s.no)+'</span><div><b><a href="#/services/'+escapeHtml(s.slug)+'">'+escapeHtml(s.name)+'</a></b><span>'+escapeHtml(s.desc)+'</span></div></li>';
+      }).join('');
+    }
+  }
+  fillServiceIndex();
+
+  /* ---------- 二级页面富内容：静态资源映射 ---------- */
+  var IMG = {
+    'expo-cantonfair': 'images/uWmHyWj3brcQpEYhD1TtPF.jpg',
+    'expo-ces': 'images/XGWL40Xzvknk057cnVJ20E.jpg',
+    'expo-ciie': 'images/I2fk3bvcw74kD5ntDf8suR.jpg',
+    'expo-computex': 'images/EEvXI0DnbXpfWIdERWEN6E.jpg',
+    'expo-gitex': 'images/lhfldyPG1xoWqt6X3NQAeP.jpg',
+    'expo-hannover': 'images/tiGfVWgQXZkG1AjbOSJ03i.jpg',
+    'expo-iaa': 'images/lsbhbqv4oxSUCNsGnDlstR.jpg',
+    'expo-ifa': 'images/5YxOFVQUkOu2WpVYKiyApy.jpg',
+    'expo-mwc': 'images/UnqSPwMrOuI4FvfGdDiTcr.jpg',
+    'expo-waic': 'images/NlyYsV7Rcf6hGC9gqXdzIc.jpg',
+    'hero-city': 'images/QZ6AQht4OekX1cYrohUqHR.jpg',
+    'plate-eastmoney': 'images/IEI2rUaIgCGEqyJFhh8Rgh.png',
+    'plate-futu': 'images/FmQHpB0cHVUtmQJoY2oIjU.png',
+    'plate-xueqiu': 'images/94nCXxXfNUYkAYMtyDlI0y.png'
+  };
+
+  /* ---------- 二级页面富内容：数据 ---------- */
+  var PLATFORMS = [
+    {key:'xueqiu', name:'雪球 XUEQIU', en:'INVESTOR COMMUNITY · CN', tint:'#1E74AF',
+     line:'中国最具影响力的投资者社区，聚集大量持续跟踪 A 股、港股、美股的活跃个人投资者与专业投资人。',
+     points:[['覆盖','A 股 / 港股 / 美股活跃投资者与专业投资人'],
+             ['形态','长文深度帖、组合讨论、财报解读、直播路演'],
+             ['服务','企业号运营、深度内容策划、投资者问答引导、口碑守护']]},
+    {key:'futu', name:'富途 FUTU', en:'HK & US MARKETS · BROKERAGE', tint:'#1E74AF',
+     line:'港美股领先的互联网券商平台，牛牛社区聚集跨境配置需求旺盛的高净值与年轻投资者。',
+     points:[['覆盖','富途牛牛社区、港美股高净值与年轻投资者'],
+             ['形态','牛牛圈话题、直播、财报日历、行情讨论'],
+             ['服务','社区话题运营、财报节点内容、直播与路演联动']]},
+    {key:'eastmoney', name:'东方财富 EASTMONEY', en:'FINANCE PORTAL · CN', tint:'#1E74AF',
+     line:'中国领先的互联网财经门户，股吧与资讯端构成投资者获取企业信息的日常入口。',
+     points:[['覆盖','股吧与资讯端千万级日活投资者'],
+             ['形态','股吧讨论、财经资讯、公告与研报联动'],
+             ['服务','股吧舆情监测、资讯内容分发、负面信息快速响应']]}
+  ];
+
+  var EXCHANGES = [
+    {code:'SH', cn:'上海证券交易所', mk:'MAIN BOARD · STAR MARKET',
+     d:'面向沪市主板与科创板公司，支持定期报告传播、业绩说明会与投资者日常沟通。'},
+    {code:'SZ', cn:'深圳证券交易所', mk:'MAIN BOARD · CHINEXT',
+     d:'面向深市主板与创业板公司，围绕成长叙事与产业逻辑展开资本市场沟通。'},
+    {code:'HK', cn:'香港交易所', mk:'MAIN BOARD · GEM',
+     d:'面向港股上市公司，提供中英双语披露传播与国际投资者关系服务。'}
+  ];
+
+  var IR_CAL = [
+    ['3–4 月','年度业绩发布','年报传播、业绩说明会与分析师电话会，让合规披露同时成为一次价值沟通。'],
+    ['4 / 10 月','季度报告','季报要点提炼与市场预期管理，帮助资本市场读懂企业的经营节奏。'],
+    ['5–6 月','股东大会','议案沟通、股东关系维护与现场传播支持，稳固长期股东基础。'],
+    ['8 月','中期业绩','中报传播与投资者沟通会，承接全年的价值叙事主线。'],
+    ['全年','常态化沟通','舆情监测、路演支持、ESG 与长期价值传播，持续校准投资者预期。']
+  ];
+
+  var EXPOS = [
+    {k:'ces', idx:'01', mo:'JAN', mark:'CES', sz:'', c:'ex-c1', cn:'国际消费类电子产品展览会', loc:'美国 · 拉斯维加斯', when:'1 月', sector:'消费电子 · 智能硬件', focus:'新品首发与国际科技媒体集中报道'},
+    {k:'mwc', idx:'02', mo:'MAR', mark:'MWC', sz:'', c:'ex-c2', cn:'世界移动通信大会', loc:'西班牙 · 巴塞罗那', when:'3 月', sector:'通信 · 移动互联', focus:'运营商与产业链全球议题设置'},
+    {k:'hannover', idx:'03', mo:'APR', mark:'HANNOVER MESSE', sz:'s', c:'ex-c3', cn:'汉诺威工业博览会', loc:'德国 · 汉诺威', when:'4 月', sector:'工业制造 · 自动化', focus:'工业 4.0 与中国智造叙事'},
+    {k:'cantonfair', idx:'04', mo:'APR/OCT', mark:'CANTON FAIR', sz:'m', c:'ex-c4', cn:'中国进出口商品交易会（广交会）', loc:'中国 · 广州', when:'4 & 10 月', sector:'外贸 · 综合商品', focus:'海外采购商沟通与订单转化'},
+    {k:'computex', idx:'05', mo:'MAY', mark:'COMPUTEX', sz:'m', c:'ex-c5', cn:'台北国际电脑展', loc:'中国台北', when:'5 月', sector:'半导体 · 算力生态', focus:'供应链与算力生态传播'},
+    {k:'waic', idx:'06', mo:'JUL', mark:'WAIC', sz:'', c:'ex-c1', cn:'世界人工智能大会', loc:'中国 · 上海', when:'7 月', sector:'人工智能', focus:'大模型与 AI 应用的主场发声'},
+    {k:'ifa', idx:'07', mo:'SEP', mark:'IFA', sz:'', c:'ex-c2', cn:'柏林国际电子消费品展览会', loc:'德国 · 柏林', when:'9 月', sector:'消费电子 · 家电', focus:'欧洲市场新品叙事与渠道沟通'},
+    {k:'iaa', idx:'08', mo:'SEP', mark:'IAA MOBILITY', sz:'m', c:'ex-c3', cn:'慕尼黑国际汽车展', loc:'德国 · 慕尼黑', when:'9 月', sector:'汽车 · 智能出行', focus:'智能电动车与出行生态议题'},
+    {k:'gitex', idx:'09', mo:'OCT', mark:'GITEX GLOBAL', sz:'m', c:'ex-c4', cn:'迪拜国际信息技术展', loc:'阿联酋 · 迪拜', when:'10 月', sector:'信息技术 · 云与 AI', focus:'中东市场拓展与政企关系'},
+    {k:'ciie', idx:'10', mo:'NOV', mark:'CIIE', sz:'', c:'ex-c5', cn:'中国国际进口博览会', loc:'中国 · 上海', when:'11 月', sector:'进口贸易 · 综合', focus:'跨国品牌的中国市场故事'}
+  ];
+
+  var PHASES = [
+    ['PHASE 01','展前 8–12 周',['传播策略与议题设定','国际媒体名单与邀约','预告内容矩阵搭建']],
+    ['PHASE 02','展前 2 周',['新闻稿与高层口径定稿','国际媒体预沟通','现场物料与话术准备']],
+    ['PHASE 03','展会现场',['现场新闻中心与媒体接待','高管演讲与论坛编排','国际媒体专访集中产出','实时内容分发与传播']],
+    ['PHASE 04','展后 1–4 周',['国际报道汇总与效果评估','传播复盘报告','素材库沉淀与二次传播']]
+  ];
+
+  /* ---------- 二级页面富内容：构建 ---------- */
+  function blkHead(en, cn, lead){
+    return '<div class="blk-head reveal"><p class="eyebrow"><b>'+en+'</b></p>'+
+      '<h2 class="slash-title blk-title">'+cn+'</h2>'+
+      (lead ? '<p class="blk-lead">'+lead+'</p>' : '')+'</div>';
+  }
+  function statCell(n, unit, cn, en){
+    return '<div class="stat reveal"><p class="stat-num"><span class="countable" data-end="'+n+'">0</span>'+
+      '<span class="unit">'+unit+'</span></p><p class="stat-label">'+cn+'<b>'+en+'</b></p></div>';
+  }
+
+  var irPlatforms =
+    '<div class="blk reveal">'+blkHead('OUR PLATFORM NETWORK','投资者社区合作平台',
+      '投资者关系不只在定期报告里，也在投资者每天打开的那个社区。我们长期运营雪球、富途、东方财富三大阵地，在企业与投资者之间建立稳定、日常的沟通界面。')+
+      '<div class="pf-grid">'+PLATFORMS.map(function(p){
+        return '<div class="pf-card" style="--pf:'+p.tint+'">'+
+          '<div class="pf-logo"><img src="'+IMG['plate-'+p.key]+'" alt="'+p.name+'" loading="lazy"></div>'+
+          '<p class="pf-name">'+p.name+'</p><p class="pf-en">'+p.en+'</p>'+
+          '<p class="pf-line">'+p.line+'</p>'+
+          '<ul class="pf-ul">'+p.points.map(function(x){
+            return '<li><b>'+x[0]+'</b><span>'+x[1]+'</span></li>';
+          }).join('')+'</ul></div>';
+      }).join('')+'</div>'+
+      '<p class="blk-note"><b>*</b> 上述平台名称与商标归各自权利人所有，3SAMIO 赛明欧与其为独立合作关系。</p>'+
+    '</div>';
+
+  var irExchanges =
+    '<div class="blk reveal">'+blkHead('EXCHANGES COVERED','沪 · 深 · 港 三大交易所',
+      '三大交易所的披露规则与投资者结构各不相同，我们据此配置差异化的传播重点与沟通节奏。')+
+      '<div class="exch">'+EXCHANGES.map(function(x){
+        return '<div class="exch-c"><p class="x-code">'+x.code+'</p><p class="x-cn">'+x.cn+'</p>'+
+          '<p class="x-mk">'+x.mk+'</p><p class="x-d">'+x.d+'</p></div>';
+      }).join('')+'</div>'+
+    '</div>';
+
+  var irCalendar =
+    '<div class="blk reveal">'+blkHead('IR CALENDAR','年度投资者沟通节奏',
+      '投资者关系是一条全年不断线的沟通曲线。我们把披露节点与日常沟通排进同一张日历，让企业始终在资本市场的视野里。')+
+      '<div class="tl">'+IR_CAL.map(function(r){
+        return '<div class="tl-row"><p class="tl-when">'+r[0]+'</p><p class="tl-what">'+r[1]+'</p><p class="tl-how">'+r[2]+'</p></div>';
+      }).join('')+'</div>'+
+    '</div>';
+
+  var irStats =
+    '<div class="blk"><div class="stats" style="margin-top:0">'+
+      statCell(3,'大','投资者社区平台','PLATFORM COMMUNITIES')+
+      statCell(3,'大','交易所覆盖（沪 · 深 · 港）','EXCHANGES COVERED')+
+      statCell(2,'种','中英双语披露传播','WORKING LANGUAGES')+
+      statCell(100,'%','披露节点覆盖','DISCLOSURE COVERAGE')+
+    '</div></div>';
+
+  var evExpos =
+    '<div class="blk reveal">'+blkHead('GLOBAL EXHIBITIONS','国际展会一览',
+      '从拉斯维加斯到迪拜，从汉诺威到上海，我们常年驻场十场全球重要展会，让中国企业的技术叙事在主场之外被持续听见。')+
+      '<div class="exg">'+EXPOS.map(function(e){
+        return '<div class="ex-card '+e.c+'">'+
+          '<span aria-hidden="true" class="ex-photo" style="background-image:url('+IMG['expo-'+e.k]+')"></span>'+
+          '<span aria-hidden="true" class="ex-grid"></span>'+
+          '<div class="ex-top"><span class="ex-idx">'+e.idx+'</span><span class="ex-mo">'+e.mo+'</span></div>'+
+          '<div class="ex-mark'+(e.sz ? ' '+e.sz : '')+'">'+e.mark+'</div>'+
+          '<div class="ex-bot"><p class="ex-cn">'+e.cn+'</p><p class="ex-loc">'+e.loc+'</p></div>'+
+        '</div>';
+      }).join('')+'</div>'+
+    '</div>';
+
+  var evCalendar =
+    '<div class="blk reveal">'+blkHead('ANNUAL CALENDAR','年度展会日历',
+      '按时间排列的十场核心展会。从品类、城市到传播重点，一张表看清全年的国际传播窗口。')+
+      '<div class="cal-scroll"><table class="cal"><thead><tr>'+
+        '<th>展会</th><th>时间</th><th>城市</th><th>行业领域</th><th>传播重点</th>'+
+      '</tr></thead><tbody>'+
+        EXPOS.map(function(e){
+          return '<tr><td class="c-name">'+e.cn+'<em>'+e.mark+'</em></td>'+
+            '<td class="c-when">'+e.when+'</td><td class="c-loc">'+e.loc+'</td>'+
+            '<td>'+e.sector+'</td><td>'+e.focus+'</td></tr>';
+        }).join('')+
+      '</tbody></table></div>'+
+    '</div>';
+
+  var PH_TINT = ['#1E74AF','#1E74AF','#1E74AF','#1E74AF'];
+  var evPhases =
+    '<div class="blk reveal">'+blkHead('HOW WE WORK','展会传播全流程',
+      '一次参展的传播价值，取决于展前是否有人听、现场是否被记录、展后是否被复述。')+
+      '<div class="ph-grid">'+PHASES.map(function(p,i){
+        return '<div class="ph-c" style="--ph:'+PH_TINT[i]+'"><p class="ph-no">'+p[0]+'</p><h4>'+p[1]+'</h4>'+
+          '<ul>'+p[2].map(function(x){ return '<li>'+x+'</li>'; }).join('')+'</ul></div>';
+      }).join('')+'</div>'+
+    '</div>';
+
+  var evStats =
+    '<div class="blk"><div class="stats" style="margin-top:0">'+
+      statCell(10,'场','常年驻场核心展会','CORE EXHIBITIONS')+
+      statCell(4,'大','覆盖洲际市场','CONTINENTS')+
+      statCell(6,'个','国家与地区','COUNTRIES &amp; REGIONS')+
+      statCell(2,'种','中英双语现场支持','ON-SITE LANGUAGES')+
+    '</div></div>';
+
+  var RICH = {
+    'ir': irPlatforms + irExchanges + irCalendar + irStats,
+    'events': evExpos + evCalendar + evPhases + evStats
+  };
+  var HERO_IMG = { 'events': IMG['expo-gitex'] };
+
+  /* ---------- 服务子页（动态创建，语言切换时可重建） ---------- */
+  var app = document.getElementById('app');
+  function buildServicePages(){
+    app.querySelectorAll('.js-service-page').forEach(function(s){ s.remove(); });
+    SERVICES.forEach(function(s){
+    var sec = document.createElement('section');
+    sec.className = 'page js-service-page';
+    sec.setAttribute('data-route','/services/'+s.slug);
+    sec.setAttribute('data-title', s.name+' — 3SAMIO 赛明欧');
+    sec.innerHTML =
+      '<div class="page-hero" style="--ph-img:url(\''+(HERO_IMG[s.slug] || IMG['hero-city'])+'\')">'+
+        '<div class="bgimg"></div><div class="shade"></div>'+
+        '<div class="container"><p class="crumb"><a href="#/">HOME</a> / <a href="#/services">SERVICES</a> / '+escapeHtml(s.no)+'</p>'+
+        '<h1>'+escapeHtml(s.name)+'</h1><p class="ph-en">'+escapeHtml(s.en)+'</p></div></div>'+
+      '<div class="page-body"><div class="container">'+
+        '<div class="sub-nav" style="margin:0 0 60px">'+SERVICES.map(function(x){
+          return '<a href="#/services/'+escapeHtml(x.slug)+'"'+(x.slug===s.slug?' class="on"':'')+'>'+escapeHtml(x.no)+' '+escapeHtml(x.name)+'</a>';
+        }).join('')+'</div>'+
+        '<div class="two-col"><div class="prose"><p class="lead">'+escapeHtml(s.desc)+'</p>'+
+        '<p>如需了解本服务的详细方案与案例，欢迎<a href="#/contact" style="color:var(--blue);text-decoration:underline;text-underline-offset:4px">联系我们</a>。</p></div>'+
+        '<ul class="list-block">'+s.delivers.map(function(d,i){
+          return '<li><span class="li-no">0'+(i+1)+'</span><div><b>'+escapeHtml(d[0])+'</b><span>'+escapeHtml(d[1])+'</span></div></li>';
+        }).join('')+'</ul></div>'+
+        (RICH[s.slug] || '')+
+      '</div></div>';
+    app.appendChild(sec);
+    });
+  }
+  buildServicePages();
+
+  /* ---------- 客户滚动卡牌（logo + 代码徽标 + 行业亮点，语言切换时可重建） ---------- */
+  /* 条目格式：[logo图片|null(文字标识), 名称, 一句话介绍, 股票代码|'', 标识色] */
+  var LM_TINTS = ['#1E74AF', '#1E74AF', '#1E74AF', '#1E74AF'];
+  var CLIENT_LOGOS = [
+    ['images/DglLVpF9oUBZZxmD8hLAkm.png', '希迪智驾 CiDi', '港交所上市的商用车自动驾驶领军企业', '03881.HK', '', 'https://www.cidi.ai'],
+    ['images/alibaba.png', '阿里巴巴', '港交所上市的电商与云计算巨头', '09988.HK', 0, 'https://www.alibabagroup.com'],
+    ['images/jd.png', '京东集团', '港交所上市的综合电商与供应链龙头', '09618.HK', 1, 'https://www.jd.com'],
+    ['images/baidu.png', '百度集团', '港交所上市的AI与搜索巨头', '09888.HK', 2, 'https://www.baidu.com'],
+    ['images/1QXmtwfmAHUQ87NgRRGUPh.png', '涂鸦智能 Tuya', '港交所上市的全球AIoT云平台', '02391.HK', '', 'https://www.tuya.com'],
+    ['images/chery.png', '奇瑞汽车', '港交所上市的中国车企出口龙头', '9973.HK', 3, 'https://www.cheryinternational.com'],
+    ['images/ly.png', '同程旅行', '港交所上市的在线旅游龙头', '00780.HK', 0, 'https://www.ly.com'],
+    ['images/yumchina.png', '百胜中国', '港交所上市的连锁餐饮巨头', '09987.HK', 1, 'https://www.yumchina.com'],
+    ['images/mfOdiU3aThdy6Ltmx35p7D.png', '首程控股', '港交所上市的城市停车资产运营龙头', '00697.HK', '', 'https://www.shouchengholdings.com'],
+    ['images/hworld.png', '华住集团', '港交所上市的全球酒店集团', '01179.HK', 2, 'https://www.hworld.com'],
+    ['images/sfcity.png', '顺丰同城', '港交所上市的即时配送平台', '09699.HK', 3, 'https://www.sf-cityrush.com'],
+    ['images/dpizza.png', '达势股份', '港交所上市的连锁披萨龙头', '01405.HK', 0, 'https://www.dominos.com.cn'],
+    ['images/dtvfOeosdnCKObpXUXErJC.png', '宝尊 BAOZUN', '港交所上市的品牌电商服务龙头', '09991.HK', '', 'https://www.baozun.com'],
+    ['images/guoquan.png', '锅圈 Guoquan', '港交所上市的火锅食材连锁龙头', '02570.HK', 1, 'https://www.zzgqsh.com'],
+    ['images/linklogis.png', '联易融', '港交所上市的供应链金融科技龙头', '09959.HK', 2, 'https://www.linklogis.com'],
+    ['images/horizon.svg', '地平线机器人', '港交所上市的智驾计算方案龙头', '09660.HK', 3, 'https://www.horizon.auto'],
+    ['images/Jhso4Ir66Y9TNHdnajae4G.png', '禾赛 HESAI', '港交所上市的激光雷达全球龙头', '2525.HK', '', 'https://www.hesai.com'],
+    ['images/robosense.png', '速腾聚创', '港交所上市的车载激光雷达龙头', '02498.HK', 0, 'https://www.robosense.ai'],
+    ['images/inoscience.svg', '英诺赛科', '港交所上市的氮化镓功率芯片龙头', '02577.HK', 1, 'https://www.innoscience.com'],
+    ['images/unisound.png', '云知声', '港交所上市的AI语音技术龙头', '09678.HK', 2, 'https://www.unisound.com'],
+    ['images/ggZMdvPK1KUvsWKM5jDLY1.png', '驭势科技 UISEE', '无人驾驶商业化落地先行者', '', '', 'https://www.uisee.com'],
+    ['images/yeahka.svg', '移卡', '港交所上市的支付科技服务商', '09923.HK', 3, 'https://www.yeahka.com'],
+    ['images/oneconnect.svg', '金融壹账通', '港交所上市的金融科技服务商', '06638.HK', 0, 'https://www.oneconnect.com.cn'],
+    ['images/everest.png', '云顶新耀', '港交所上市的创新药企', '01952.HK', 1, 'https://www.everestmedicines.com'],
+    ['images/i6PlWHJTlRxEEGrvg7zLWW.png', '九阳豆业', '商用豆浆产业链头部品牌', '', '', 'https://www.doujiang.com'],
+    ['images/atrenew.png', '万物新生', '纽交所上市的二手3C交易龙头', 'RERE.US', 2, 'https://www.atrenew.com'],
+    ['images/chagee.svg', '霸王茶姬', '纳斯达克上市的新中式茶饮品牌', 'CHA.US', 3, 'https://www.chagee.com'],
+    ['images/ecarx.svg', '亿咖通', '纳斯达克上市的汽车智能化科技公司', 'ECX.US', 0, 'https://www.ecarxgroup.com'],
+    ['images/q7yZ9MsnpPzDBUAzubdxXk.png', '曹操出行', '港交所上市的新能源出行平台', '02643.HK', '', 'https://www.caocaokeji.cn'],
+    ['images/naas.svg', '能链智电', '纳斯达克上市的充电服务龙头', 'NAAS.US', 1, 'https://www.nandazd.com'],
+    ['images/yalla.png', '雅乐集团', '纽交所上市的中东社交娱乐龙头', 'YALA.US', 2, 'https://www.yalla.com'],
+    ['images/appotronics.svg', '光峰科技', '科创板上市的激光显示龙头', '688007.SH', 3, 'https://www.appotronics.com'],
+    ['images/FVIytHCycuCHuA4SK4QDny.png', '智慧树 Treenity', '中国领先的幼教数字平台', '', '', 'https://www.hybbtree.com'],
+    ['images/huaqin.png', '华勤技术', '上交所上市的智能硬件ODM龙头', '603296.SH', 0, 'https://www.huaqin.com'],
+    ['images/longsys.png', '江波龙', '创业板上市的存储模组龙头', '301308.SZ', 1, 'https://www.longsys.com'],
+    ['images/haday.png', '海天味业', '上交所上市的调味品巨头', '603288.SH', 2, 'https://www.haday.com'],
+    ['images/3jESmPIP00nkEiHwNEgvBq.png', '灿谷 CANGO', '纽交所上市的汽车交易服务平台', 'CANG.US', '', 'https://www.cangoonline.com'],
+    ['images/seres.svg', '赛力斯', '上交所上市的新能源车企', '601127.SH', 3, 'https://www.seres.cn'],
+    ['images/tongrentang.png', '同仁堂', '上交所上市的百年中医药品牌', '600085.SH', 0, 'https://www.tongrentang.com'],
+    ['images/gun6VtB09oBJbZL0w5ifcu.png', '九阳豆浆', '国民级健康豆浆饮品品牌', '', '', 'https://www.doujiang.com', 'https://www.doujiang.com']
+    ];
+    var lmCard = function(l, ghost, link){
+      var logo;
+      if (l[0]){
+        logo = '<div class="lm-logo"><img src="'+l[0]+'" alt="'+(ghost?'':escapeHtml(l[1]))+'" loading="lazy"></div>';
+      } else {
+        var tint = LM_TINTS[(typeof l[4] === 'number' ? l[4] : 0) % LM_TINTS.length];
+        logo = '<div class="lm-logo"><span class="lm-mark" style="background:'+tint+'">'+escapeHtml(l[1].charAt(0))+'</span></div>';
+      }
+      var code = l[3] ? '<span class="lm-code">'+escapeHtml(l[3])+'</span>' : '';
+      var inner = logo+
+        '<p class="lm-name">'+escapeHtml(l[1])+code+'</p>'+
+        '<p class="lm-line">'+escapeHtml(l[2])+'</p>';
+      if (link && l[5]){
+        return '<a class="lm-card"'+(ghost?' aria-hidden="true"':'')+' href="'+l[5]+'" target="_blank" rel="noopener" title="'+escapeHtml(l[1])+'">'+inner+'</a>';
+      }
+      return '<div class="lm-card"'+(ghost?' aria-hidden="true"':'')+'>'+inner+'</div>';
+    };
+  function fillTracks(){
+    var set = CLIENT_LOGOS.map(function(l){ return lmCard(l, false); }).join('');
+    var ghosts = CLIENT_LOGOS.map(function(l){ return lmCard(l, true); }).join('');
+    ['clientTrack'].forEach(function(id){
+      var el = document.getElementById(id);
+      if (el) el.innerHTML = set + ghosts;
+    });
+  }
+  fillTracks();
+  /* 案例页：四行同步滚动、上下对齐、卡片可单独点击（直达客户官网） */
+  function buildClientRows(){
+    var grid = document.getElementById('clientRows');
+    if (!grid) return;
+    var per = Math.ceil(CLIENT_LOGOS.length / 4);
+    var html = '';
+    for (var r = 0; r < 4; r++){
+      var row = CLIENT_LOGOS.slice(r * per, (r + 1) * per);
+      if (!row.length) continue;
+      var set = row.map(function(l){ return lmCard(l, false, true); }).join('');
+      var ghosts = row.map(function(l){ return lmCard(l, true, true); }).join('');
+      html += '<div class="cm-row"><div class="cm-track">'+set+set+ghosts+'</div></div>';
+    }
+    grid.innerHTML = html;
+  }
+  buildClientRows();
+
+  /* ---------- 滚动卡牌手动拖拽（按住跟手 / 甩动加速，松手回归匀速；同组多轨联动） ---------- */
+  (function(){
+    function phase(el){
+      var t = getComputedStyle(el).transform;
+      if (t === 'none') return 0;
+      if (window.WebKitCSSMatrix){ return -new WebKitCSSMatrix(t).m41; }
+      var m = t.match(/matrix.*\(([-\d.]+), [-\d.]+, [-\d.]+, [-\d.]+, ([-\d.]+), ([-\d.]+)\)/);
+      return m ? -parseFloat(m[2]) : 0;
+    }
+    /* host：拖动热区（可为整个网格）；getTracks：惰性取回同组轨道（语言切换重建后仍有效）。
+       锚定式相位：以抓取时刻各轨道的 animationDelay 为基准做增量平移，抓取/松手零跳变。 */
+    function initDrag(host, getTracks){
+      var tracks = [], base = null, dur = 0;
+      function refresh(){
+        tracks = getTracks() || [];
+        base = tracks[0] || null;
+        dur = base ? (parseFloat(getComputedStyle(base).animationDuration) || 0) : 0;
+        return !!(base && dur);
+      }
+      refresh();
+      var wrap = host || (base ? (base.closest('.lm-wrap') || base.closest('.ex-rail')) : null) || base || null;
+      if (!wrap) return;
+      var dragging=false, x0=0, lastX=0, lastT=0, vel=0, moved=0, raf=0, shift=0;
+      function applyShift(px){
+        tracks.forEach(function(t){
+          var Wt = (t.scrollWidth/2) || 1;
+          var d0 = t._dragD0 || 0;
+          var q = ((px % Wt) + Wt) % Wt;
+          t.style.animationDelay = (d0 - (q/Wt)*dur).toFixed(3)+'s';
+        });
+      }
+      wrap.addEventListener('pointerdown', function(e){
+        if (e.button) return;
+        if (!refresh()) return;
+        dragging=true; moved=0; vel=0; shift=0;
+        x0=lastX=e.clientX; lastT=performance.now();
+        tracks.forEach(function(t){
+          t._dragD0 = parseFloat(getComputedStyle(t).animationDelay) || 0;
+          t.style.animationPlayState='paused';
+        });
+        if (raf){ cancelAnimationFrame(raf); raf=0; }
+        wrap.classList.add('dragging');
+      });
+      window.addEventListener('pointermove', function(e){
+        if (!dragging) return;
+        var now = performance.now();
+        if (now > lastT){ vel = vel*0.75 + 0.25*((lastX - e.clientX)/(now-lastT)*1000); }
+        lastX=e.clientX; lastT=now;
+        moved = Math.max(moved, Math.abs(e.clientX - x0));
+        shift = x0 - e.clientX;
+        applyShift(shift);
+      });
+      function endDrag(){
+        if (!dragging) return; dragging=false;
+        wrap.classList.remove('dragging');
+        var s = shift, t0 = performance.now();
+        var v = Math.max(-2600, Math.min(2600, vel));   // 甩动上限
+        (function fling(){
+          var t = (performance.now()-t0)/1000;
+          if (t > 0.55 || Math.abs(v) < 20){
+            tracks.forEach(function(t){ t.style.animationPlayState=''; });
+            return;
+          }
+          v *= 0.93;
+          s += v * 0.016;
+          applyShift(s);
+          raf = requestAnimationFrame(fling);
+        })();
+      }
+      window.addEventListener('pointerup', endDrag);
+      window.addEventListener('pointercancel', endDrag);
+      wrap.addEventListener('dragstart', function(e){ e.preventDefault(); });
+      // 拖拽后抑制卡片误点（位移超过 6px 视为拖拽）
+      wrap.addEventListener('click', function(e){
+        if (moved > 6){ e.preventDefault(); e.stopPropagation(); }
+      }, true);
+    }
+    /* 单轨：首页客户滚动卡牌 / 展会卡带 */
+    document.querySelectorAll('.lm-track, .ex-track').forEach(function(t){
+      initDrag(t, function(){ return [t]; });
+    });
+    /* 案例页：四行同属一组，在网格任意位置按住拖动，四行同步平移，行距与上下对齐不变 */
+    var cmGrid = document.getElementById('clientRows');
+    if (cmGrid){
+      initDrag(cmGrid, function(){
+        return Array.prototype.slice.call(cmGrid.querySelectorAll('.cm-track'));
+      });
+    }
+  })();
+
+  /* ---------- Hash 路由（多级页面） ---------- */
+  var pages = document.querySelectorAll('.page');
+  function currentPath(){
+    var h = location.hash.replace(/^#/,'');
+    return h || '/';
+  }
+  function resolve(path){
+    var exact = document.querySelector('.page[data-route="'+path+'"]');
+    if (exact) return exact;
+    /* 子路由回退到父级 */
+    var parts = path.split('/').filter(Boolean);
+    while (parts.length > 1) {
+      parts.pop();
+      var parent = '/' + parts.join('/');
+      var m = document.querySelector('.page[data-route="'+parent+'"]');
+      if (m) return m;
+    }
+    return document.querySelector('.page[data-route="/"]') || pages[0];
+  }
+  function navigate(){
+    var path = currentPath();
+    var target = resolve(path);
+    pages.forEach(function(p){ p.classList.toggle('active', p === target); });
+    document.title = target.getAttribute('data-title') || '3SAMIO 赛明欧';
+    /* 导航高亮 */
+    document.querySelectorAll('[data-nav]').forEach(function(a){
+      a.classList.toggle('active', target.getAttribute('data-route').indexOf(a.getAttribute('data-nav')) === 0);
+    });
+    window.scrollTo({top:0, behavior:'auto'});
+    observeReveals(target);
+    onScroll();
+  }
+  window.addEventListener('hashchange', navigate);
+
+  /* ---------- 进场动效（WOW 式 fadeInUp） ---------- */
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, {threshold:.12, rootMargin:'0px 0px -6% 0px'}) : null;
+  function observeReveals(scope){
+    var els = scope.querySelectorAll('.reveal:not(.visible)');
+    if (io) { els.forEach(function(el){ io.observe(el); }); }
+    else { els.forEach(function(el){ el.classList.add('visible'); }); }
+  }
+
+  /* ---------- 数字计数动画 ---------- */
+  function runCount(el){
+    if (el.dataset.done) return;
+    el.dataset.done = '1';
+    var end = parseInt(el.getAttribute('data-end'), 10) || 0;
+    var dur = 1500, t0 = null;
+    function step(t){
+      if (!t0) t0 = t;
+      var p = Math.min((t - t0) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(end * eased);
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        e.target.querySelectorAll('.countable').forEach(runCount);
+        cio.unobserve(e.target);
+      }
+    });
+  }, {threshold:.3}) : null;
+
+  /* ---------- 启动 ---------- */
+  navigate();
+  document.querySelectorAll('.stats').forEach(function(s){
+    if (cio) cio.observe(s);
+    else s.querySelectorAll('.countable').forEach(runCount);
+  });
+
+  /* ---------- 语言切换 ---------- */
+  var langBtn = document.getElementById('langToggle');
+  function updateLangBtn(){
+    if (!langBtn) return;
+    langBtn.querySelectorAll('[data-lang-opt]').forEach(function(sp){
+      sp.classList.toggle('on', sp.getAttribute('data-lang-opt') === LANG);
+    });
+  }
+  function applyTitle(){
+    var t = document.querySelector('.page.active');
+    document.title = (t && t.getAttribute('data-title')) || '3SAMIO';
+  }
+  function setLang(l){
+    LANG = l;
+    try{ localStorage.setItem('samio-lang', l); }catch(e){}
+    updateLangBtn();
+    /* 记住当前路由，重建动态内容后恢复 */
+    var cur = document.querySelector('.page.active');
+    var route = cur ? cur.getAttribute('data-route') : '/';
+    fillServiceIndex();
+    buildServicePages();
+    fillTracks();
+    buildClientRows();
+    pages = document.querySelectorAll('.page');
+    applyI18n();
+    var tgt = document.querySelector('.page[data-route="'+route+'"]') || document.querySelector('.page[data-route="/"]');
+    if (tgt){
+      tgt.classList.add('active');
+      observeReveals(tgt);
+      document.querySelectorAll('.stats').forEach(function(s){
+        if (cio) cio.observe(s);
+        else s.querySelectorAll('.countable').forEach(runCount);
+      });
+    }
+    applyTitle();
+    onScroll();
+  }
+  if (langBtn){
+    langBtn.addEventListener('click', function(){
+      setLang(LANG === 'zh' ? 'en' : 'zh');
+    });
+  }
+  updateLangBtn();
+  if (LANG === 'en') setLang('en');
+})();
+</script>
+</body>
+</html>
